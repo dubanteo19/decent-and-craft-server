@@ -4,7 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="" />
+    <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/JpaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/BlogLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/ReviewAddRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/UserLoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/UserRegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/BlogNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/ProductNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/AbstractModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/BlogCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductBlog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Voucher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/ProductStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/BlogCategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/StatusRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/DecentAndCraftApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/DecentAndCraftApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +69,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -37,12 +94,16 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2igZd9zC0RNO0AmcgD3HJJabJ7H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -62,9 +123,15 @@
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nlu.DecentAndCraft.exception" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DecentAndCraftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -92,10 +159,22 @@
       <option name="presentableId" value="Default" />
       <updated>1719914265424</updated>
       <workItem from="1719914266449" duration="2043000" />
+      <workItem from="1719936001557" duration="13007000" />
+      <workItem from="1719961528448" duration="1999000" />
+      <workItem from="1720024548300" duration="2366000" />
+      <workItem from="1720061911385" duration="5764000" />
+      <workItem from="1720087321057" duration="1873000" />
+      <workItem from="1720096333967" duration="1251000" />
+      <workItem from="1720101108137" duration="8554000" />
+      <workItem from="1720115583196" duration="8145000" />
+      <workItem from="1720124271985" duration="5724000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
