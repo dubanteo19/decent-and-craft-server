@@ -5,61 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/JpaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/BlogLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/ReviewAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/UserLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/UserRegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/BlogNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/ProductNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/AbstractModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/BlogCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductBlog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Voucher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/ProductStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/UserStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/BlogCategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/StatusRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/address_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/blog_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/product-detail.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/product_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/review_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/user_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ReviewLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/ReviewUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/ReviewNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/mapper/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/mapper/ReviewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/ReviewMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/DecentAndCraftApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/DecentAndCraftApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/BlogNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/BlogNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/ProductNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/exception/ProductNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ProductDetailLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/exception/BlogNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/exception/BlogNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/exception/ProductNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/exception/ProductNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/repository/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/repository/ReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +61,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -105,10 +96,25 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "HTTP Request.address_test | Add address to user.executor": "Run",
+    "HTTP Request.blog_test | find all blogs.executor": "Run",
+    "HTTP Request.blog_test | find blogs by categoryId.executor": "Run",
+    "HTTP Request.blog_test | find blogs by id.executor": "Run",
+    "HTTP Request.product-detail | Add review to product detail.executor": "Run",
+    "HTTP Request.product-detail | Find all product detail.executor": "Run",
+    "HTTP Request.product-detail | Find product detail by id.executor": "Run",
+    "HTTP Request.product-detail | Update review to product detail.executor": "Run",
+    "HTTP Request.product_test | Find all products.executor": "Run",
+    "HTTP Request.product_test | Find products by id.executor": "Run",
+    "HTTP Request.review_test | Filter review by rating.executor": "Run",
+    "HTTP Request.user_test | Find All User.executor": "Run",
+    "HTTP Request.user_test | Find User By Id.executor": "Run",
+    "HTTP Request.user_test | User Login.executor": "Run",
+    "HTTP Request.user_test | User Register.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "RequestMappingsPanelWidth0": "854",
+    "RequestMappingsPanelWidth1": "854",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.DecentAndCraftApplication.executor": "Run",
@@ -132,7 +138,22 @@
       <recent name="com.nlu.DecentAndCraft.exception" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.address_test | Add address to user">
+    <configuration name="address_test | Add address to user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/address_test.http" requestIdentifier="Add address to user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="product-detail | Add review to product detail" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/product-detail.http" index="3" requestIdentifier="Add review to product detail" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="product-detail | Find product detail by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/product-detail.http" index="2" requestIdentifier="Find product detail by id" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="product-detail | Update review to product detail" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/product-detail.http" index="4" requestIdentifier="Update review to product detail" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="review_test | Filter review by rating" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/review_test.http" requestIdentifier="Filter review by rating" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="DecentAndCraftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="DecentAndCraft" />
@@ -141,6 +162,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.address_test | Add address to user" />
+        <item itemvalue="HTTP Request.review_test | Filter review by rating" />
+        <item itemvalue="HTTP Request.product-detail | Find product detail by id" />
+        <item itemvalue="HTTP Request.product-detail | Update review to product detail" />
+        <item itemvalue="HTTP Request.product-detail | Add review to product detail" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -167,12 +197,23 @@
       <workItem from="1720096333967" duration="1251000" />
       <workItem from="1720101108137" duration="8554000" />
       <workItem from="1720115583196" duration="8145000" />
-      <workItem from="1720124271985" duration="5724000" />
+      <workItem from="1720124271985" duration="13256000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

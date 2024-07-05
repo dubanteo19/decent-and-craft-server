@@ -1,11 +1,9 @@
 package com.nlu.DecentAndCraft.dataLoader;
 
 import com.nlu.DecentAndCraft.dto.request.CategoryAddRequest;
-import com.nlu.DecentAndCraft.model.Blog;
 import com.nlu.DecentAndCraft.model.Image;
 import com.nlu.DecentAndCraft.model.ProductBlog;
 import com.nlu.DecentAndCraft.model.ProductDetail;
-import com.nlu.DecentAndCraft.service.BlogService;
 import com.nlu.DecentAndCraft.service.CategoryService;
 import com.nlu.DecentAndCraft.service.ProductDetailService;
 import com.nlu.DecentAndCraft.service.ProductService;
@@ -27,7 +25,7 @@ public class ProductDetailLoader implements CommandLineRunner {
     ProductService productService;
     CategoryService categoryService;
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         loadCategories();
         ProductDetail productDetail1 = new ProductDetail();
         var product = productService.findById(1L);

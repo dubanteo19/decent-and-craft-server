@@ -1,5 +1,6 @@
 package com.nlu.DecentAndCraft.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @ManyToMany(mappedBy ="categoryList")
+    @ManyToMany(mappedBy = "categoryList")
+    @JsonIgnore
     List<ProductDetail> productDetails;
 }

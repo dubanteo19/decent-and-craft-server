@@ -1,0 +1,25 @@
+###Filter review by rating
+GET localhost:8080/api/v1/product-detail/1/reviews/filter?rating=2
+
+###Add review to product detail
+POST http://localhost:8080/api/v1/product-detail/1/reviews
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productId": 1,
+  "rating": 5,
+  "text": "Very good"
+}
+
+###Update review to product detail
+PUT http://localhost:8080/api/v1/product-detail/1/reviews/1
+Content-Type: application/json
+
+{
+  "reviewId": 1,
+  "userId": 1,
+  "productId": 1,
+  "rating": 5,
+  "text": "Not very good"
+}

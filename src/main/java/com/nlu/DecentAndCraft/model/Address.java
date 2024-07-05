@@ -21,7 +21,7 @@ public class Address {
     String province;
     String district;
     String ward;
-    String descString;
+    String desc;
     boolean isDefault;
     String fullName;
     String phoneNumber;

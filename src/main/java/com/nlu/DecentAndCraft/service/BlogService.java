@@ -17,7 +17,7 @@ public class BlogService {
     BlogRepository blogRepository;
 
     public Blog findById(Long blogId) {
-        return blogRepository.findById(blogId).orElseThrow(() -> new BlogNotFoundException("Blog not found"));
+        return blogRepository.findById(blogId).orElseThrow(BlogNotFoundException::new);
     }
 
     public List<Blog> findAllBlogByBlogCategoryId(Long blogCategoryId) {

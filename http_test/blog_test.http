@@ -1,0 +1,8 @@
+### find all blogs
+GET localhost:8080/api/v1/blogs
+
+### find blog by id
+GET localhost:8080/api/v1/blogs/2
+
+### find blogs by categoryId
+GET localhost:8080/api/v1/blogs/search?categoryId=1

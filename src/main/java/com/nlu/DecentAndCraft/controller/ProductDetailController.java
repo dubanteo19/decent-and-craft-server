@@ -1,6 +1,7 @@
 package com.nlu.DecentAndCraft.controller;
 
 import com.nlu.DecentAndCraft.dto.request.ReviewAddRequest;
+import com.nlu.DecentAndCraft.dto.request.ReviewUpdateRequest;
 import com.nlu.DecentAndCraft.model.ProductDetail;
 import com.nlu.DecentAndCraft.model.Review;
 import com.nlu.DecentAndCraft.service.ProductDetailService;
@@ -27,15 +28,25 @@ public class ProductDetailController {
     }
 
     @GetMapping
-    public ResponseEntity<List<ProductDetail>> getAllProductDetailPathVariable(){
+    public ResponseEntity<List<ProductDetail>> getAllProductDetailPathVariable() {
         return ResponseEntity.ok(productDetailService.getAllProductDetails());
     }
 
-    @PostMapping("/{productId}")
+    @PostMapping("/{productId}/reviews")
     public ResponseEntity<Review> addReview(@PathVariable Long productId, @RequestBody ReviewAddRequest request) {
         if (!request.productId().equals(productId)) {
             throw new RuntimeException("product not found");
         }
         return ResponseEntity.ok(reviewService.saveReview(request));
+    }
+
+    @PutMapping("/{productId}/reviews/{reviewId}")
+    public ResponseEntity<Review> updateReview(@PathVariable Long reviewId, @RequestBody ReviewUpdateRequest request) {
+        return ResponseEntity.ok(reviewService.update(reviewId, request));
+    }
+
+    @GetMapping("/{productId}/reviews/filter")
+    public ResponseEntity<List<Review>> filterReview(@PathVariable Long productId, @RequestParam int rating) {
+        return ResponseEntity.ok(reviewService.filter(productId, rating));
     }
 }

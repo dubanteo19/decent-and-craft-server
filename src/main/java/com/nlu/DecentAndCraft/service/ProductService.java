@@ -33,7 +33,7 @@ public class ProductService {
     public Product findById(Long id) {
         return productRepository
                 .findById(id)
-                .orElseThrow(() -> new ProductNotFoundException("Product not found"));
+                .orElseThrow(ProductNotFoundException::new);
     }
 
     public List<Product> findByName(String name) {
@@ -56,7 +56,7 @@ public class ProductService {
     public Product update(Long id, Product product) {
         Product existingProduct = productRepository
                 .findById(id)
-                .orElseThrow(() -> new ProductNotFoundException("Product not found with this id"));
+                .orElseThrow(ProductNotFoundException::new);
         existingProduct.setName(product.getName());
         return productRepository.save(existingProduct);
     }

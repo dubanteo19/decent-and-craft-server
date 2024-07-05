@@ -18,7 +18,7 @@ public class Image {
     private Long id;
     private String url;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "product_detail_id",referencedColumnName = "id")
+    @JoinColumn(name = "product_detail_id", referencedColumnName = "id")
     @JsonIgnore
     private ProductDetail productDetail;
 }
