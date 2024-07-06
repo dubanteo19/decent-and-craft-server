@@ -5,34 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/UserUpdateInfoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/feedback_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/FeedbackLoader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Feedback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/FeedbackRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/FeedbackService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http_test/address_test.http" beforeDir="false" afterPath="$PROJECT_DIR$/http_test/address_test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http_test/product-detail.http" beforeDir="false" afterPath="$PROJECT_DIR$/http_test/product-detail.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/http_test/user_test.http" beforeDir="false" afterPath="$PROJECT_DIR$/http_test/user_test.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductDetailService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/ReviewMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/ReviewMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" afterDir="false" />
@@ -45,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -85,6 +64,7 @@
     "HTTP Request.blog_test | find all blogs.executor": "Run",
     "HTTP Request.blog_test | find blogs by categoryId.executor": "Run",
     "HTTP Request.blog_test | find blogs by id.executor": "Run",
+    "HTTP Request.feedback_test | Find all feedback.executor": "Run",
     "HTTP Request.product-detail | Add review to product detail.executor": "Run",
     "HTTP Request.product-detail | Find all product detail.executor": "Run",
     "HTTP Request.product-detail | Find product detail by id.executor": "Run",
@@ -101,6 +81,7 @@
     "HTTP Request.user_test | User Login.executor": "Run",
     "HTTP Request.user_test | User Register.executor": "Run",
     "Maven.DecentAndCraft [clean].executor": "Run",
+    "Maven.DecentAndCraft [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -128,8 +109,8 @@
       <recent name="com.nlu.DecentAndCraft.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.user_test | User Login">
-    <configuration name="user_test | Find All User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" requestIdentifier="Find All User" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.feedback_test | Find all feedback">
+    <configuration name="feedback_test | Find all feedback" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/feedback_test.http" requestIdentifier="Find all feedback" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="user_test | Find User By Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="2" requestIdentifier="Find User By Id" runType="Run single request">
@@ -154,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.feedback_test | Find all feedback" />
         <item itemvalue="HTTP Request.user_test | User Login" />
         <item itemvalue="HTTP Request.user_test | Find address list of user" />
         <item itemvalue="HTTP Request.user_test | Update User info By Id" />
         <item itemvalue="HTTP Request.user_test | Find User By Id" />
-        <item itemvalue="HTTP Request.user_test | Find All User" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +171,8 @@
       <workItem from="1720124271985" duration="13256000" />
       <workItem from="1720185140704" duration="59000" />
       <workItem from="1720217976766" duration="8278000" />
+      <workItem from="1720285708371" duration="59000" />
+      <workItem from="1720288712226" duration="1663000" />
     </task>
     <servers />
   </component>
