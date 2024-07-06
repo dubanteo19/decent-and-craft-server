@@ -21,6 +21,8 @@ public class Order extends AbstractModel {
     Long id;
     @ManyToOne
     @JoinColumn(name = "address_id")
+    @JsonIgnore
+
     Address address;
     @Enumerated(EnumType.STRING)
     OrderStatus status;
@@ -29,6 +31,7 @@ public class Order extends AbstractModel {
     Voucher voucher;
     @ManyToOne
     @JoinColumn(name = "user_id")
+    @JsonIgnore
     User user;
     String notice;
     double shippingFee;

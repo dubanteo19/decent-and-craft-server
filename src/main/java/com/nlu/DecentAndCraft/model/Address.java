@@ -1,10 +1,8 @@
 package com.nlu.DecentAndCraft.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.List;
@@ -14,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@ToString(exclude = "user")
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,13 +20,15 @@ public class Address {
     String province;
     String district;
     String ward;
-    String desc;
-    boolean isDefault;
+    String description;
+    boolean isDefaultAddress;
     String fullName;
     String phoneNumber;
     @ManyToOne
     @JoinColumn(name = "user_id")
+    @JsonIgnore
     User user;
+    @JsonIgnore
     @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
     List<Order> orders;
 }

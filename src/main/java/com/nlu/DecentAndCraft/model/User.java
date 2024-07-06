@@ -1,10 +1,12 @@
 package com.nlu.DecentAndCraft.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.nlu.DecentAndCraft.model.status.UserStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.List;
 
@@ -23,6 +25,7 @@ public class User extends AbstractModel {
     @Enumerated(EnumType.STRING)
     UserStatus status;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonIgnore
     List<Address> addressList;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     List<Review> reviewList;

@@ -30,4 +30,9 @@ public class ProductDetailService {
     public ProductDetail save(ProductDetail productDetail) {
         return productDetailRepository.save(productDetail);
     }
+
+    public List<Review> getReviewList(Long productId) {
+        var product= productDetailRepository.findByProductId(productId).orElseThrow();
+        return product.getReviewList();
+    }
 }

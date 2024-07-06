@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-07-05T06:57:52+0700",
+    date = "2024-07-06T07:28:44+0700",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.3 (Ubuntu)"
 )
 public class AddressMapperImpl implements AddressMapper {
@@ -22,7 +22,7 @@ public class AddressMapperImpl implements AddressMapper {
         address1.setProvince( address.province() );
         address1.setDistrict( address.district() );
         address1.setWard( address.ward() );
-        address1.setDesc( address.desc() );
+        address1.setDescription( address.description() );
         address1.setFullName( address.fullName() );
         address1.setPhoneNumber( address.phoneNumber() );
 

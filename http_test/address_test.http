@@ -6,7 +6,7 @@ Content-Type: application/json
   "province": "Hanoi",
   "district": "Cau Giay",
   "ward": "Dich Vong",
-  "desc": "123 ABC Street",
+  "description": "123 ABC Street",
   "fullName": "John Doe",
   "phoneNumber": "1234567890"
 }

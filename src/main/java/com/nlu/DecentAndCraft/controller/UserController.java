@@ -1,8 +1,6 @@
 package com.nlu.DecentAndCraft.controller;
 
-import com.nlu.DecentAndCraft.dto.request.AddressAddRequest;
-import com.nlu.DecentAndCraft.dto.request.UserLoginRequest;
-import com.nlu.DecentAndCraft.dto.request.UserRegisterRequest;
+import com.nlu.DecentAndCraft.dto.request.*;
 import com.nlu.DecentAndCraft.model.Address;
 import com.nlu.DecentAndCraft.model.User;
 import com.nlu.DecentAndCraft.service.UserService;
@@ -25,15 +23,26 @@ public class UserController {
     public ResponseEntity<List<User>> getUsers() {
         return ResponseEntity.ok(userService.findAll());
     }
-
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUserById(@PathVariable Long userId) {
         return ResponseEntity.ok(userService.findById(userId));
+    }
+    @PutMapping("/{userId}")
+    public ResponseEntity<User> updateUserInfo(@PathVariable Long userId, @RequestBody UserUpdateInfoRequest userUpdateInfoRequest) {
+        return ResponseEntity.ok(userService.updateUserInfoById(userId,userUpdateInfoRequest));
+    }
+    @PutMapping("/{userId}/change-password")
+    public ResponseEntity<User> changePassword(@PathVariable Long userId, @RequestBody ChangePasswordRequest request) {
+        return ResponseEntity.ok(userService.changePassword(userId,request));
     }
 
     @PostMapping("/{userId}/address")
     public ResponseEntity<Address> saveAddress(@PathVariable Long userId, @RequestBody AddressAddRequest request) {
         return ResponseEntity.ok(userService.saveAddress(userId,request));
+    }
+    @GetMapping("/{userId}/address")
+    public ResponseEntity<List<Address>> getAddressList(@PathVariable Long userId ) {
+        return ResponseEntity.ok(userService.getAddressList(userId));
     }
 
     @PostMapping("/register")

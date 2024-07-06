@@ -4,7 +4,7 @@ public record AddressAddRequest(
         String province,
         String district,
         String ward,
-        String desc,
+        String description,
         String fullName,
         String phoneNumber
 
