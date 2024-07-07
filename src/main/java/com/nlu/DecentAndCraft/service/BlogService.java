@@ -20,6 +20,11 @@ public class BlogService {
         return blogRepository.findById(blogId).orElseThrow(BlogNotFoundException::new);
     }
 
+    public String getBlogContentById(Long blogId) {
+        var blog = blogRepository.findById(blogId).orElseThrow(BlogNotFoundException::new);
+        return blog.getContent();
+    }
+
     public List<Blog> findAllBlogByBlogCategoryId(Long blogCategoryId) {
         return blogRepository.findAllByCategoriesId(blogCategoryId);
     }

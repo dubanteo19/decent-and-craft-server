@@ -3,15 +3,13 @@ package com.nlu.DecentAndCraft.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

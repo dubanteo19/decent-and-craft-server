@@ -5,16 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/http_test/feedback_test.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/FeedbackLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Feedback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/FeedbackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/FeedbackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/http_test/category_test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/ProductAddRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http_test/product-detail.http" beforeDir="false" afterPath="$PROJECT_DIR$/http_test/product-detail.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductBlog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/ProductDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/BlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DecentAndCraft-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/DecentAndCraft-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/DecentAndCraft-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/DecentAndCraft-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/BlogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/BlogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/controller/ProductDetailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ProductLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ProductLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Blog$BlogBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Blog$BlogBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Blog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Blog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Image.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Image.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductBlog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductBlog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/ProductDetail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/BlogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/BlogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/CategoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/ProductDetailService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/AddressMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/ReviewMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/ReviewMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/UserMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nlu.DecentAndCraft.DecentAndCraftApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.nlu.DecentAndCraft.DecentAndCraftApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.nlu.DecentAndCraft.DecentAndCraftApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.nlu.DecentAndCraft.DecentAndCraftApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +55,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Record" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -64,8 +95,14 @@
     "HTTP Request.blog_test | find all blogs.executor": "Run",
     "HTTP Request.blog_test | find blogs by categoryId.executor": "Run",
     "HTTP Request.blog_test | find blogs by id.executor": "Run",
+    "HTTP Request.category_test | Get all categories.executor": "Run",
+    "HTTP Request.category_test | Get all category.executor": "Run",
+    "HTTP Request.category_test | Get category by id.executor": "Run",
+    "HTTP Request.category_test | Save a category.executor": "Run",
+    "HTTP Request.category_test | Update a category by id.executor": "Run",
     "HTTP Request.feedback_test | Find all feedback.executor": "Run",
     "HTTP Request.product-detail | Add review to product detail.executor": "Run",
+    "HTTP Request.product-detail | Create new product.executor": "Run",
     "HTTP Request.product-detail | Find all product detail.executor": "Run",
     "HTTP Request.product-detail | Find product detail by id.executor": "Run",
     "HTTP Request.product-detail | Find reviews of detail by id.executor": "Run",
@@ -88,10 +125,10 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DecentAndCraftApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "Spring Boot.DecentAndCraftApplication.executor": "Debug",
+    "git-widget-placeholder": "category-api",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dbt19/dev/ThucTapLTW",
+    "last_opened_file_path": "/home/dbt19/dev/decent-and-craft",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,20 +146,20 @@
       <recent name="com.nlu.DecentAndCraft.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.feedback_test | Find all feedback">
-    <configuration name="feedback_test | Find all feedback" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/feedback_test.http" requestIdentifier="Find all feedback" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.product-detail | Create new product">
+    <configuration name="category_test | Get all categories" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/category_test.http" requestIdentifier="Get all categories" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Find User By Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="2" requestIdentifier="Find User By Id" runType="Run single request">
+    <configuration name="category_test | Get category by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/category_test.http" index="2" requestIdentifier="Get category by id" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Find address list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find address list of user" runType="Run single request">
+    <configuration name="category_test | Save a category" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/category_test.http" index="3" requestIdentifier="Save a category" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Update User info By Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="3" requestIdentifier="Update User info By Id" runType="Run single request">
+    <configuration name="category_test | Update a category by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/category_test.http" index="4" requestIdentifier="Update a category by id" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | User Login" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="7" requestIdentifier="User Login" runType="Run single request">
+    <configuration name="product-detail | Create new product" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/product-detail.http" index="4" requestIdentifier="Create new product" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="DecentAndCraftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -135,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.feedback_test | Find all feedback" />
-        <item itemvalue="HTTP Request.user_test | User Login" />
-        <item itemvalue="HTTP Request.user_test | Find address list of user" />
-        <item itemvalue="HTTP Request.user_test | Update User info By Id" />
-        <item itemvalue="HTTP Request.user_test | Find User By Id" />
+        <item itemvalue="HTTP Request.product-detail | Create new product" />
+        <item itemvalue="HTTP Request.category_test | Get all categories" />
+        <item itemvalue="HTTP Request.category_test | Update a category by id" />
+        <item itemvalue="HTTP Request.category_test | Save a category" />
+        <item itemvalue="HTTP Request.category_test | Get category by id" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +209,11 @@
       <workItem from="1720185140704" duration="59000" />
       <workItem from="1720217976766" duration="8278000" />
       <workItem from="1720285708371" duration="59000" />
-      <workItem from="1720288712226" duration="1663000" />
+      <workItem from="1720288712226" duration="1847000" />
+      <workItem from="1720292573586" duration="17000" />
+      <workItem from="1720295923049" duration="1942000" />
+      <workItem from="1720303612373" duration="10000" />
+      <workItem from="1720391289160" duration="3604000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,19 @@
+###Get all categories
+GET localhost:8080/api/v1/categories
+###Get category by id
+GET localhost:8080/api/v1/categories/9
+###Save a category
+POST localhost:8080/api/v1/categories
+Content-Type: application/json
+
+{
+  "categoryName": "DIY"
+}
+###Update a category by id
+PUT localhost:8080/api/v1/categories/7
+Content-Type: application/json
+
+{
+  "categoryId": 7,
+  "categoryName": "DIY_UPDATED"
+}

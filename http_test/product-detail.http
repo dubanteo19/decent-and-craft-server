@@ -7,4 +7,29 @@ GET http://localhost:8080/api/v1/product-detail/1
 ###Find reviews of detail by id
 GET http://localhost:8080/api/v1/product-detail/1/reviews
 
+###Create new product
+POST http://localhost:8080/api/v1/product-detail
+Content-Type:application/json
 
+{
+  "name": "Nến thơm Tealight hoa khô DATELIGHTS CANDLE - DATENEYLAND STYLE HÀN QUỐC KÈM HỘP",
+  "thumbnail": "thumbnail_url.jpg",
+  "price": 100000,
+  "origin": 100000,
+  "description": "san pham rat tot",
+  "unitInStock": 100,
+  "categoryIds": [
+    1,
+    4
+  ],
+  "imageUrls": [
+    "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw2e7o8awsez71",
+    "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw2e7o8ay6zf50",
+    "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lkgbayw1im58a5",
+    "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmpoqaomm0gv88",
+    "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmpoqaomnf1b66"
+  ]
+}
+
+
+}
