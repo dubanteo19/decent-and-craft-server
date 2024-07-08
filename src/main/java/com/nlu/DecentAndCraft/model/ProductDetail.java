@@ -2,10 +2,7 @@ package com.nlu.DecentAndCraft.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -19,6 +16,7 @@ public class ProductDetail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @OneToOne(cascade = CascadeType.ALL)
+    @ToString.Exclude
     private Product product;
     @OneToMany(mappedBy = "productDetail", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<Image> imageList;

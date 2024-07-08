@@ -18,5 +18,6 @@ public class Image {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_detail_id", referencedColumnName = "id")
     @JsonIgnore
+    @ToString.Exclude
     private ProductDetail productDetail;
 }
