@@ -3,11 +3,10 @@ package com.nlu.DecentAndCraft.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.nlu.DecentAndCraft.model.status.OrderStatus;
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -15,6 +14,7 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Table(name = "orders")
+@Builder
 public class Order extends AbstractModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,6 @@ public class Order extends AbstractModel {
     @ManyToOne
     @JoinColumn(name = "address_id")
     @JsonIgnore
-
     Address address;
     @Enumerated(EnumType.STRING)
     OrderStatus status;
@@ -33,6 +32,8 @@ public class Order extends AbstractModel {
     @JoinColumn(name = "user_id")
     @JsonIgnore
     User user;
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<OrderDetail> orderDetails;
     String notice;
     double shippingFee;
     double totalPrice;

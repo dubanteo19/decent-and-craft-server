@@ -87,6 +87,10 @@ public class UserService {
         return address;
     }
 
+    public Address getAddressById(Long addressId) {
+        return addressRepository.findById(addressId).orElseThrow(AddressNotFoundException::new);
+    }
+
     public List<Address> getAddressList(Long userId) {
         var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
         return user.getAddressList();
