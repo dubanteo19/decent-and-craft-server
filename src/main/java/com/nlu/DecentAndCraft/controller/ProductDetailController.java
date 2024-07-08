@@ -3,6 +3,7 @@ package com.nlu.DecentAndCraft.controller;
 import com.nlu.DecentAndCraft.dto.request.ProductAddRequest;
 import com.nlu.DecentAndCraft.dto.request.ReviewAddRequest;
 import com.nlu.DecentAndCraft.dto.request.ReviewUpdateRequest;
+import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
 import com.nlu.DecentAndCraft.model.ProductDetail;
 import com.nlu.DecentAndCraft.model.Review;
 import com.nlu.DecentAndCraft.service.ProductDetailService;
@@ -29,7 +30,7 @@ public class ProductDetailController {
     }
 
     @GetMapping("/{productId}/reviews")
-    public ResponseEntity<List<Review>> getReviewList(@PathVariable Long productId) {
+    public ResponseEntity<List<ReviewResponse>> getReviewList(@PathVariable Long productId) {
         return ResponseEntity.ok(productDetailService.getReviewList(productId));
     }
 
@@ -57,7 +58,7 @@ public class ProductDetailController {
     }
 
     @GetMapping("/{productId}/reviews/filter")
-    public ResponseEntity<List<Review>> filterReview(@PathVariable Long productId, @RequestParam int rating) {
+    public ResponseEntity<List<ReviewResponse>> filterReview(@PathVariable Long productId, @RequestParam int rating) {
         return ResponseEntity.ok(reviewService.filter(productId, rating));
     }
 }

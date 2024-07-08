@@ -1,6 +1,8 @@
 package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.dto.request.ProductAddRequest;
+import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
+import com.nlu.DecentAndCraft.mapper.ReviewMapper;
 import com.nlu.DecentAndCraft.model.*;
 import com.nlu.DecentAndCraft.model.status.ProductStatus;
 import com.nlu.DecentAndCraft.repository.ProductDetailRepository;
@@ -20,6 +22,7 @@ public class ProductDetailService {
     ProductDetailRepository productDetailRepository;
     ProductRepository productRepository;
     CategoryService categoryService;
+    ReviewMapper reviewMapper = ReviewMapper.INSTANCE;
 
     public List<ProductDetail> getAllProductDetails() {
         return productDetailRepository.findAll();
@@ -70,8 +73,11 @@ public class ProductDetailService {
         return productDetailRepository.save(saveProductDetail);
     }
 
-    public List<Review> getReviewList(Long productId) {
+    public List<ReviewResponse> getReviewList(Long productId) {
         var product = productDetailRepository.findByProductId(productId).orElseThrow();
-        return product.getReviewList();
+        return product
+                .getReviewList()
+                .stream()
+                .map(reviewMapper::toReviewResponse).toList();
     }
 }

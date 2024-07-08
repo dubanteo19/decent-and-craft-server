@@ -2,6 +2,7 @@ package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.dto.request.ReviewAddRequest;
 import com.nlu.DecentAndCraft.dto.request.ReviewUpdateRequest;
+import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
 import com.nlu.DecentAndCraft.exception.ReviewNotFoundException;
 import com.nlu.DecentAndCraft.mapper.ReviewMapper;
 import com.nlu.DecentAndCraft.model.Review;
@@ -53,11 +54,14 @@ public class ReviewService {
         return reviewRepository.save(existingReview);
     }
 
-    public List<Review> filter(Long productId, int rating) {
+    public List<ReviewResponse> filter(Long productId, int rating) {
         var reviews = productDetailService
                 .getProductDetailById(productId)
                 .getReviewList()
-                .stream().filter(r -> r.getRating() == rating).toList();
+                .stream()
+                .filter(r -> r.getRating() == rating)
+                .map(reviewMapper::toReviewResponse)
+                .toList();
         if (reviews.isEmpty()) throw new ReviewNotFoundException();
         return reviews;
     }

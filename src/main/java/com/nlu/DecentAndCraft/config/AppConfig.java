@@ -12,7 +12,7 @@ public class AppConfig implements WebMvcConfigurer {
 
     @Bean
     public BCryptPasswordEncoder encoder() {
-        return new BCryptPasswordEncoder(16);
+        return new BCryptPasswordEncoder(12);
     }
 
     @Override
