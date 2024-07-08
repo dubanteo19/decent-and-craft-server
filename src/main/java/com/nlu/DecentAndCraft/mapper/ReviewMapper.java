@@ -14,7 +14,6 @@ public interface ReviewMapper {
     @Mapping(source = "text", target = "comments")
     Review toReview(ReviewUpdateRequest request);
     @Mapping(source = "user.id", target = "userId")
-
     @Mapping(source = "user.fullName", target = "userFullName")
     ReviewResponse toReviewResponse(Review review);
 }
