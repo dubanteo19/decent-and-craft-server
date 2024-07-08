@@ -28,6 +28,7 @@ public class User extends AbstractModel {
     @JsonIgnore
     List<Address> addressList;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonIgnore
     List<Review> reviewList;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     List<Order> orderList;

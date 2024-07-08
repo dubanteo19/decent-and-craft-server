@@ -1,6 +1,7 @@
 package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.dto.request.CategoryAddRequest;
+import com.nlu.DecentAndCraft.dto.request.CategoryUpdateRequest;
 import com.nlu.DecentAndCraft.model.Category;
 import com.nlu.DecentAndCraft.repository.CategoryRepository;
 import lombok.AccessLevel;
@@ -27,7 +28,7 @@ public class CategoryService {
     public void saveAllCategory(List<CategoryAddRequest> categoryAddRequests) {
         var categories = categoryAddRequests.stream().map(c -> {
             var category = new Category();
-            category.setName(c.name());
+            category.setName(c.categoryName());
             return category;
         }).toList();
         categoryRepository.saveAll(categories);
@@ -35,7 +36,15 @@ public class CategoryService {
 
     public Category saveCategory(CategoryAddRequest categoryAddRequest) {
         var category = new Category();
-        category.setName(categoryAddRequest.name());
+        category.setName(categoryAddRequest.categoryName());
         return categoryRepository.save(category);
+    }
+
+    public Category updateCategory(Long categoryId, CategoryUpdateRequest request) {
+        var existingCategory = categoryRepository
+                .findById(categoryId)
+                .orElseThrow(() -> new RuntimeException("Category not found"));
+        existingCategory.setName(request.categoryName());
+        return categoryRepository.save(existingCategory);
     }
 }

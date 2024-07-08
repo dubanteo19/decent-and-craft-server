@@ -1,12 +1,29 @@
+###get all address to user
+GET localhost:8080/api/v1/users/1/address
 ###Add address to user
 POST localhost:8080/api/v1/users/1/address
 Content-Type: application/json
 
 {
-  "province": "Hanoi",
+  "province": "Hanoi 2",
   "district": "Cau Giay",
   "ward": "Dich Vong",
   "description": "123 ABC Street",
   "fullName": "John Doe",
-  "phoneNumber": "1234567890"
+  "phoneNumber": "1234567890",
+  "isDefault": true
+}
+
+### update address
+PUT localhost:8080/api/v1/users/1/address/1
+Content-Type: application/json
+
+{
+"province": "Hanoi new",
+"district": "Cau Giay",
+"ward": "Dich Vong",
+"description": "123 ABC Street",
+"fullName": "John Doe",
+"phoneNumber": "1234567890",
+"isDefault": true
 }

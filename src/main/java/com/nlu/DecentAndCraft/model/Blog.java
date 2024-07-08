@@ -1,5 +1,6 @@
 package com.nlu.DecentAndCraft.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,6 +22,7 @@ public class Blog extends AbstractModel {
     private String thumbnail;
     @Lob
     @Column(columnDefinition = "TEXT")
+    @JsonIgnore
     private String content;
     private String header;
     private String author;

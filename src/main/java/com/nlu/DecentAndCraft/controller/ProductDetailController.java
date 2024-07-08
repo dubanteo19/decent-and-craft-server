@@ -1,7 +1,9 @@
 package com.nlu.DecentAndCraft.controller;
 
+import com.nlu.DecentAndCraft.dto.request.ProductAddRequest;
 import com.nlu.DecentAndCraft.dto.request.ReviewAddRequest;
 import com.nlu.DecentAndCraft.dto.request.ReviewUpdateRequest;
+import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
 import com.nlu.DecentAndCraft.model.ProductDetail;
 import com.nlu.DecentAndCraft.model.Review;
 import com.nlu.DecentAndCraft.service.ProductDetailService;
@@ -26,14 +28,20 @@ public class ProductDetailController {
     public ResponseEntity<ProductDetail> getProductDetail(@PathVariable Long productId) {
         return ResponseEntity.ok(productDetailService.getProductDetailById(productId));
     }
+
     @GetMapping("/{productId}/reviews")
-    public ResponseEntity<List<Review>> getReviewList(@PathVariable Long productId) {
+    public ResponseEntity<List<ReviewResponse>> getReviewList(@PathVariable Long productId) {
         return ResponseEntity.ok(productDetailService.getReviewList(productId));
     }
 
     @GetMapping
     public ResponseEntity<List<ProductDetail>> getAllProductDetailPathVariable() {
         return ResponseEntity.ok(productDetailService.getAllProductDetails());
+    }
+
+    @PostMapping()
+    public ResponseEntity<ProductDetail> createProduct(@RequestBody ProductAddRequest productAddRequest) {
+        return ResponseEntity.ok(productDetailService.save(productAddRequest));
     }
 
     @PostMapping("/{productId}/reviews")
@@ -50,7 +58,7 @@ public class ProductDetailController {
     }
 
     @GetMapping("/{productId}/reviews/filter")
-    public ResponseEntity<List<Review>> filterReview(@PathVariable Long productId, @RequestParam int rating) {
+    public ResponseEntity<List<ReviewResponse>> filterReview(@PathVariable Long productId, @RequestParam int rating) {
         return ResponseEntity.ok(reviewService.filter(productId, rating));
     }
 }
