@@ -44,6 +44,8 @@ public class UserLoader implements CommandLineRunner {
         userService.register(u4);
         var a1 = addressMapper.toAddress(addressDto1);
         var a2 = addressMapper.toAddress(addressDto2);
+        a1.setUser(user);
+        a2.setUser(user);
         user.setAddressList(List.of(a1, a2));
         userRepository.save(user);
         loadAddress();

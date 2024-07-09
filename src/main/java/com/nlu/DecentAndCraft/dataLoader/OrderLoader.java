@@ -53,6 +53,7 @@ public class OrderLoader implements CommandLineRunner {
                 .address(address1)
                 .orderDetails(orderDetails1)
                 .user(user1)
+                .shipment("COD")
                 .build();
         orderService.createOrder(o1);
     }

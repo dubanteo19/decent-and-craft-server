@@ -20,7 +20,4 @@ public class OrderDetail {
     @OneToOne
     Product product;
     double price;
-    @ManyToOne
-    @JoinColumn(name = "order_id")
-    Order order;
 }

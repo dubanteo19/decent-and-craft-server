@@ -5,21 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/OrderLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/OrderAddRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/OrderDetailRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/generated-sources/annotations/com/nlu/DecentAndCraft/mapper/OrderMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/http_test/order_test.http" beforeDir="false" afterPath="$PROJECT_DIR$/http_test/order_test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/OrderLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/OrderLoader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/OrderAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request/OrderAddRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/status/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/OrderAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dto/request/OrderAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order$OrderBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order$OrderBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/Order.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/status/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/model/status/OrderStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/service/OrderService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,11 @@
     &quot;accountId&quot;: &quot;350be7df-3ef0-4f31-812b-52918ba92da8&quot;
   }
 }</component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -77,6 +84,7 @@
     "HTTP Request.category_test | Save a category.executor": "Run",
     "HTTP Request.category_test | Update a category by id.executor": "Run",
     "HTTP Request.feedback_test | Find all feedback.executor": "Run",
+    "HTTP Request.order_test | Find order list of user.executor": "Run",
     "HTTP Request.product-detail | Add review to product detail.executor": "Run",
     "HTTP Request.product-detail | Create new product.executor": "Run",
     "HTTP Request.product-detail | Find all product detail.executor": "Run",
@@ -112,7 +120,7 @@
     "Spring Boot.DecentAndCraftApplication.executor": "Run",
     "git-widget-placeholder": "crud-order-api",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dbt19/dev/decent-and-craft",
+    "last_opened_file_path": "/home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -129,15 +137,18 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nlu.DecentAndCraft.exception" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nlu.DecentAndCraft.dto.request" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.DecentAndCraftApplication">
-    <configuration name="user_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find order list of user" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.order_test | Find order list of user">
+    <configuration name="order_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/order_test.http" requestIdentifier="Find order list of user" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="voucher_test | Create a voucher" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/voucher_test.http" index="2" requestIdentifier="Create a voucher" runType="Run single request">
+    <configuration name="user_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find order list of user" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="voucher_test | Find all vouchers" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/voucher_test.http" requestIdentifier="Find all vouchers" runType="Run single request">
@@ -159,11 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.order_test | Find order list of user" />
         <item itemvalue="HTTP Request.user_test | Find order list of user" />
         <item itemvalue="HTTP Request.voucher_test | Find voucher by id" />
         <item itemvalue="HTTP Request.voucher_test | Update a voucher" />
         <item itemvalue="HTTP Request.voucher_test | Find all vouchers" />
-        <item itemvalue="HTTP Request.voucher_test | Create a voucher" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +217,8 @@
       <workItem from="1720442345203" duration="14000" />
       <workItem from="1720446196549" duration="2350000" />
       <workItem from="1720458071037" duration="9647000" />
+      <workItem from="1720486249511" duration="1177000" />
+      <workItem from="1720492886116" duration="4186000" />
     </task>
     <servers />
   </component>

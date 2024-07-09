@@ -1,6 +1,15 @@
 package com.nlu.DecentAndCraft.dto.request;
 
-public record OrderAddRequest(
+import java.util.List;
 
+public record OrderAddRequest(
+        int addressId,
+        int voucherId,
+        int userId,
+        String shipment,
+        String notice,
+        double shippingFee,
+        double totalPrice,
+        List<OrderDetailRequest> orderDetails
 ) {
 }

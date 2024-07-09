@@ -32,8 +32,10 @@ public class Order extends AbstractModel {
     @JoinColumn(name = "user_id")
     @JsonIgnore
     User user;
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "order_id")
     List<OrderDetail> orderDetails;
+    String shipment;
     String notice;
     double shippingFee;
     double totalPrice;
