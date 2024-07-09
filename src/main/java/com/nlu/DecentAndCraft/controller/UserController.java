@@ -44,7 +44,7 @@ public class UserController {
     public ResponseEntity<List<Address>> getAddressList(@PathVariable Long userId ) {
         return ResponseEntity.ok(userService.getAddressList(userId));
     }
-
+    @CrossOrigin(origins = "http://localhost:5173")
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody UserRegisterRequest userRegisterRequest) {
         return ResponseEntity.ok(userService.register(userRegisterRequest));
@@ -56,5 +56,4 @@ public class UserController {
         return ResponseEntity.ok(userService.login(userLoginRequest));
 
     }
-
 }
