@@ -1,5 +1,7 @@
 ###Find all products detail
 GET http://localhost:8080/api/v1/product-detail
+###Find total sold of  product by id
+GET http://localhost:8080/api/v1/product-detail/1/sold
 
 ###Find product detail by id
 GET http://localhost:8080/api/v1/product-detail/1

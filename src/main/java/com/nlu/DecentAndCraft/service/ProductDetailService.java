@@ -5,6 +5,7 @@ import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
 import com.nlu.DecentAndCraft.mapper.ReviewMapper;
 import com.nlu.DecentAndCraft.model.*;
 import com.nlu.DecentAndCraft.model.status.ProductStatus;
+import com.nlu.DecentAndCraft.repository.OrderDetailRepository;
 import com.nlu.DecentAndCraft.repository.ProductDetailRepository;
 import com.nlu.DecentAndCraft.repository.ProductRepository;
 import lombok.AccessLevel;
@@ -22,6 +23,7 @@ public class ProductDetailService {
     ProductDetailRepository productDetailRepository;
     ProductRepository productRepository;
     CategoryService categoryService;
+    OrderDetailRepository orderDetailRepository;
     ReviewMapper reviewMapper = ReviewMapper.INSTANCE;
 
     public List<ProductDetail> getAllProductDetails() {
@@ -79,5 +81,9 @@ public class ProductDetailService {
                 .getReviewList()
                 .stream()
                 .map(reviewMapper::toReviewResponse).toList();
+    }
+
+    public Integer getProductDetailSold(Long productId) {
+        return orderDetailRepository.findTotalQuantitySoldByProductId(Math.toIntExact(productId));
     }
 }

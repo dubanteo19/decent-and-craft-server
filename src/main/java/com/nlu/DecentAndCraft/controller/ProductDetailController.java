@@ -28,6 +28,10 @@ public class ProductDetailController {
     public ResponseEntity<ProductDetail> getProductDetail(@PathVariable Long productId) {
         return ResponseEntity.ok(productDetailService.getProductDetailById(productId));
     }
+    @GetMapping("/{productId}/sold")
+    public ResponseEntity<Integer> getProductDetailSold(@PathVariable Long productId) {
+        return ResponseEntity.ok(productDetailService.getProductDetailSold(productId));
+    }
 
     @GetMapping("/{productId}/reviews")
     public ResponseEntity<List<ReviewResponse>> getReviewList(@PathVariable Long productId) {
