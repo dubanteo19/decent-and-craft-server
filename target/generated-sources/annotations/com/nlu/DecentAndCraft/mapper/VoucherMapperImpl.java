@@ -7,7 +7,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-07-09T01:39:58+0700",
+    date = "2024-07-09T23:45:48+0700",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.3 (Ubuntu)"
 )
 public class VoucherMapperImpl implements VoucherMapper {
