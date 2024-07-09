@@ -19,8 +19,13 @@ public class Product extends AbstractModel {
     Long id;
     String name;
     String thumbnail;
+<<<<<<< HEAD
+    Integer origin;
+    Integer price;
+=======
     double price;
     double origin;
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     @Enumerated(EnumType.STRING)
     ProductStatus status;
     int unitInStock;

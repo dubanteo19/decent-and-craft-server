@@ -49,7 +49,7 @@ public class UserController {
     @PutMapping("/{userId}/address/{addressId}")
     public ResponseEntity<Address> updateAddress(@PathVariable Long addressId, @PathVariable Long userId,
                                                  @RequestBody AddressAddRequest request) {
-        return ResponseEntity.ok(userService.updateAddress(addressId,userId, request));
+        return ResponseEntity.ok(userService.updateAddress(addressId, userId, request));
     }
 
     @GetMapping("/{userId}/address")
@@ -73,5 +73,4 @@ public class UserController {
         return ResponseEntity.ok(userService.login(userLoginRequest));
 
     }
-
 }

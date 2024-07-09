@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
+    </list>
+=======
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="" />
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,10 +40,15 @@
     &quot;accountId&quot;: &quot;350be7df-3ef0-4f31-812b-52918ba92da8&quot;
   }
 }</component>
+<<<<<<< HEAD
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+=======
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
       <scroll-view-position x="0" y="0" />
     </layout>
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -50,6 +61,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "HTTP Request.address_test | Add address to user.executor": "Run",
+    "HTTP Request.blog_test | find all blogs.executor": "Run",
+    "HTTP Request.blog_test | find blogs by categoryId.executor": "Run",
+    "HTTP Request.blog_test | find blogs by id.executor": "Run",
+    "HTTP Request.feedback_test | Find all feedback.executor": "Run",
+    "HTTP Request.product-detail | Add review to product detail.executor": "Run",
+    "HTTP Request.product-detail | Find all product detail.executor": "Run",
+    "HTTP Request.product-detail | Find product detail by id.executor": "Run",
+    "HTTP Request.product-detail | Find reviews of detail by id.executor": "Run",
+    "HTTP Request.product-detail | Update review to product detail.executor": "Run",
+    "HTTP Request.product_test | Find all products.executor": "Run",
+    "HTTP Request.product_test | Find products by id.executor": "Run",
+    "HTTP Request.review_test | Filter review by rating.executor": "Run",
+    "HTTP Request.user_test | Change User password By Id.executor": "Run",
+    "HTTP Request.user_test | Find All User.executor": "Run",
+    "HTTP Request.user_test | Find User By Id.executor": "Run",
+    "HTTP Request.user_test | Find address list of user.executor": "Run",
+    "HTTP Request.user_test | Update User info By Id.executor": "Run",
+    "HTTP Request.user_test | User Login.executor": "Run",
+    "HTTP Request.user_test | User Register.executor": "Run",
+    "Maven.DecentAndCraft [clean].executor": "Run",
+    "Maven.DecentAndCraft [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.DecentAndCraftApplication.executor": "Run",
+    "git-widget-placeholder": "add-data",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Workspace all/Reactjs/decent-and-craft-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Facets",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+=======
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -113,6 +173,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
   }
 }</component>
   <component name="RecentsManager">
@@ -126,8 +187,13 @@
       <recent name="com.nlu.DecentAndCraft.dto.request" />
     </key>
   </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="Spring Boot.DecentAndCraftApplication">
+    <configuration name="feedback_test | Find all feedback" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/feedback_test.http" requestIdentifier="Find all feedback" runType="Run single request">
+=======
   <component name="RunManager" selected="HTTP Request.order_test | Find order list of user">
     <configuration name="order_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/order_test.http" requestIdentifier="Find order list of user" runType="Run single request">
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
       <method v="2" />
     </configuration>
     <configuration name="user_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find order list of user" runType="Run single request">
@@ -163,8 +229,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
       </set>
     </attachedChunks>
   </component>
@@ -189,6 +254,15 @@
       <workItem from="1720185140704" duration="59000" />
       <workItem from="1720217976766" duration="8278000" />
       <workItem from="1720285708371" duration="59000" />
+<<<<<<< HEAD
+      <workItem from="1720288712226" duration="1663000" />
+      <workItem from="1720423546841" duration="13077000" />
+      <workItem from="1720460403664" duration="50000" />
+      <workItem from="1720460482474" duration="567000" />
+      <workItem from="1720462516064" duration="2998000" />
+      <workItem from="1720481223565" duration="5634000" />
+      <workItem from="1720508848279" duration="8738000" />
+=======
       <workItem from="1720288712226" duration="1847000" />
       <workItem from="1720292573586" duration="17000" />
       <workItem from="1720295923049" duration="1942000" />
@@ -202,6 +276,7 @@
       <workItem from="1720486249511" duration="1177000" />
       <workItem from="1720492886116" duration="4186000" />
       <workItem from="1720502547001" duration="51000" />
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     </task>
     <servers />
   </component>
