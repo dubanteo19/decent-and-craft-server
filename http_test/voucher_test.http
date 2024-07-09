@@ -1,0 +1,29 @@
+###Find voucher by id
+GET localhost:8080/api/v1/vouchers/1
+###Find all vouchers
+GET localhost:8080/api/v1/vouchers
+###Create a voucher
+POST localhost:8080/api/v1/vouchers
+Content-Type: application/json
+
+{
+  "voucherCode": "SUMMER2024",
+  "description": "Summer sale voucher",
+  "quantity": 100,
+  "amount": 50.0,
+  "conditions": 200.0,
+  "expirationDate": "2024-12-31"
+}
+###Update a voucher
+PUT localhost:8080/api/v1/vouchers/1
+Content-Type: application/json
+
+{
+  "voucherId": 1,
+  "voucherCode": "SUMMER2024VIP",
+  "description": "Summer sale voucher",
+  "quantity": 100,
+  "amount": 50.0,
+  "conditions": 200.0,
+  "expirationDate": "2024-12-31"
+}

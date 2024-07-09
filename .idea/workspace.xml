@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="" />
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,8 +40,15 @@
     &quot;accountId&quot;: &quot;350be7df-3ef0-4f31-812b-52918ba92da8&quot;
   }
 }</component>
+<<<<<<< HEAD
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+=======
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -50,6 +61,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -97,27 +109,103 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;HTTP Request.address_test | Add address to user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.address_test | get all address to user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.address_test | update address.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.blog_test | find all blogs.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.blog_test | find blogs by categoryId.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.blog_test | find blogs by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.category_test | Get all categories.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.category_test | Get all category.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.category_test | Get category by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.category_test | Save a category.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.category_test | Update a category by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.feedback_test | Find all feedback.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.order_test | Find order list of user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Add review to product detail.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Create new product.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Find all product detail.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Find all products detail.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Find product detail by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Find reviews of detail by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product-detail | Update review to product detail.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product_test | Find all products.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.product_test | Find products by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.review_test | Add review to product detail.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.review_test | Filter review by rating.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.review_test | Find reviews of detail by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Change User password By Id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Find All User.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Find User By Id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Find address list of user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Find order list of user.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | Update User info By Id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | User Login.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.user_test | User Register.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.voucher_test | Create a voucher.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.voucher_test | Find all vouchers.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.voucher_test | Find voucher by id.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.voucher_test | Update a voucher.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DecentAndCraft [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.DecentAndCraft [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DecentAndCraftApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;crud-order-api&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nlu.DecentAndCraft.exception" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dto/request" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nlu.DecentAndCraft.dto.request" />
+    </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.DecentAndCraftApplication">
     <configuration name="feedback_test | Find all feedback" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/feedback_test.http" requestIdentifier="Find all feedback" runType="Run single request">
+=======
+  <component name="RunManager" selected="HTTP Request.order_test | Find order list of user">
+    <configuration name="order_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/order_test.http" requestIdentifier="Find order list of user" runType="Run single request">
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Find User By Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="2" requestIdentifier="Find User By Id" runType="Run single request">
+    <configuration name="user_test | Find order list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find order list of user" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Find address list of user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="5" requestIdentifier="Find address list of user" runType="Run single request">
+    <configuration name="voucher_test | Find all vouchers" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/voucher_test.http" requestIdentifier="Find all vouchers" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | Update User info By Id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="3" requestIdentifier="Update User info By Id" runType="Run single request">
+    <configuration name="voucher_test | Find voucher by id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/voucher_test.http" requestIdentifier="Find voucher by id" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="user_test | User Login" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/user_test.http" index="7" requestIdentifier="User Login" runType="Run single request">
+    <configuration name="voucher_test | Update a voucher" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/http_test/voucher_test.http" index="4" requestIdentifier="Update a voucher" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="DecentAndCraftApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
@@ -130,11 +218,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.feedback_test | Find all feedback" />
-        <item itemvalue="HTTP Request.user_test | User Login" />
-        <item itemvalue="HTTP Request.user_test | Find address list of user" />
-        <item itemvalue="HTTP Request.user_test | Update User info By Id" />
-        <item itemvalue="HTTP Request.user_test | Find User By Id" />
+        <item itemvalue="HTTP Request.order_test | Find order list of user" />
+        <item itemvalue="HTTP Request.user_test | Find order list of user" />
+        <item itemvalue="HTTP Request.voucher_test | Find voucher by id" />
+        <item itemvalue="HTTP Request.voucher_test | Update a voucher" />
+        <item itemvalue="HTTP Request.voucher_test | Find all vouchers" />
       </list>
     </recent_temporary>
   </component>
@@ -166,6 +254,7 @@
       <workItem from="1720185140704" duration="59000" />
       <workItem from="1720217976766" duration="8278000" />
       <workItem from="1720285708371" duration="59000" />
+<<<<<<< HEAD
       <workItem from="1720288712226" duration="1663000" />
       <workItem from="1720423546841" duration="13077000" />
       <workItem from="1720460403664" duration="50000" />
@@ -173,6 +262,21 @@
       <workItem from="1720462516064" duration="2998000" />
       <workItem from="1720481223565" duration="5634000" />
       <workItem from="1720508848279" duration="8738000" />
+=======
+      <workItem from="1720288712226" duration="1847000" />
+      <workItem from="1720292573586" duration="17000" />
+      <workItem from="1720295923049" duration="1942000" />
+      <workItem from="1720303612373" duration="10000" />
+      <workItem from="1720391289160" duration="4265000" />
+      <workItem from="1720397684747" duration="3151000" />
+      <workItem from="1720405218651" duration="3107000" />
+      <workItem from="1720442345203" duration="14000" />
+      <workItem from="1720446196549" duration="2350000" />
+      <workItem from="1720458071037" duration="9647000" />
+      <workItem from="1720486249511" duration="1177000" />
+      <workItem from="1720492886116" duration="4186000" />
+      <workItem from="1720502547001" duration="51000" />
+>>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     </task>
     <servers />
   </component>
@@ -192,5 +296,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/service/ProductDetailService.java</url>
+          <line>38</line>
+          <properties class="com.nlu.DecentAndCraft.service.ProductDetailService" method="save">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

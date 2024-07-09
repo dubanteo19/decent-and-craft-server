@@ -1,10 +1,12 @@
 package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.dto.request.*;
+import com.nlu.DecentAndCraft.exception.AddressNotFoundException;
 import com.nlu.DecentAndCraft.exception.UserNotFoundException;
 import com.nlu.DecentAndCraft.mapper.AddressMapper;
 import com.nlu.DecentAndCraft.mapper.UserMapper;
 import com.nlu.DecentAndCraft.model.Address;
+import com.nlu.DecentAndCraft.model.Order;
 import com.nlu.DecentAndCraft.model.User;
 import com.nlu.DecentAndCraft.model.status.UserStatus;
 import com.nlu.DecentAndCraft.repository.AddressRepository;
@@ -57,15 +59,36 @@ public class UserService {
         return user;
     }
 
+    public Address updateAddress(Long addressId, Long userId, AddressAddRequest request) {
+        var existingAddress = addressRepository.findById(addressId).orElseThrow(AddressNotFoundException::new);
+        var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
+        addressMapper.updateAddress(existingAddress, request);
+        if (request.isDefault()) {
+            var addressList = user.getAddressList();
+            addressList.forEach(address -> address.setDefaultAddress(false));
+            existingAddress.setDefaultAddress(true);
+        }
+        addressRepository.save(existingAddress);
+        return existingAddress;
+    }
+
     public Address saveAddress(Long userId, AddressAddRequest request) {
         var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
         var address = addressMapper.toAddress(request);
+        if (request.isDefault()) {
+            var addressList = user.getAddressList();
+            addressList.forEach(a -> a.setDefaultAddress(false));
+            address.setDefaultAddress(true);
+        }
         address.setUser(user);
-        System.out.println(address);
         addressRepository.save(address);
         user.getAddressList().add(address);
         userRepository.save(user);
         return address;
+    }
+
+    public Address getAddressById(Long addressId) {
+        return addressRepository.findById(addressId).orElseThrow(AddressNotFoundException::new);
     }
 
     public List<Address> getAddressList(Long userId) {
@@ -82,10 +105,16 @@ public class UserService {
 
     public User changePassword(Long userId, ChangePasswordRequest request) {
         var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
-        if (!user.getPassword().equals(request.currentPassword()))
+        if (!encoder.matches(request.currentPassword(), user.getPassword()))
             throw new RuntimeException("Current password is incorrect");
-        user.setPassword(request.newPassword());
+        user.setPassword(encoder.encode(request.newPassword()));
+        userRepository.save(user);
         return user;
+    }
+
+    public List<Order> getOrderList(Long userId) {
+        var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
+        return user.getOrderList();
     }
 }
 

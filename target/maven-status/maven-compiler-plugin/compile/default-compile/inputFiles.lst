@@ -2,6 +2,7 @@
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/config/JpaConfig.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/controller/BlogController.java
+/home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/controller/CategoryController.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/controller/FeedbackController.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/controller/ProductController.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/controller/ProductDetailController.java
@@ -15,7 +16,9 @@
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/AddressAddRequest.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryAddRequest.java
+/home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/CategoryUpdateRequest.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/ChangePasswordRequest.java
+/home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/ProductAddRequest.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/ReviewAddRequest.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/ReviewUpdateRequest.java
 /home/dbt19/dev/decent-and-craft-server/src/main/java/com/nlu/DecentAndCraft/dto/request/UserLoginRequest.java

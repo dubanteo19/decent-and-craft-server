@@ -22,9 +22,15 @@ public class BlogController {
     public ResponseEntity<List<Blog>> getAllBlogs() {
         return ResponseEntity.ok(blogService.findAll());
     }
+
     @GetMapping("/search")
     public ResponseEntity<List<Blog>> getAllBlogsByBlogCategoryId(@RequestParam Long categoryId) {
         return ResponseEntity.ok(blogService.findAllBlogByBlogCategoryId(categoryId));
+    }
+
+    @GetMapping("/{blogId}/content")
+    public ResponseEntity<String> getBlogContentById(@PathVariable Long blogId) {
+        return ResponseEntity.ok(blogService.getBlogContentById(blogId));
     }
 
     @GetMapping("/{blogId}")
