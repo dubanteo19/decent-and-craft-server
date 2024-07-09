@@ -13,8 +13,6 @@ public class AppConfig implements WebMvcConfigurer {
     @Bean
     public BCryptPasswordEncoder encoder() {
         return new BCryptPasswordEncoder(12);
-<<<<<<< HEAD
-=======
     }
 
     @Override
@@ -23,6 +21,5 @@ public class AppConfig implements WebMvcConfigurer {
                 .allowedOrigins("*") // Adjust this to your frontend's URL
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
->>>>>>> 5c6129e9c8189f1d694a32949b711eb267269fbf
     }
 }
