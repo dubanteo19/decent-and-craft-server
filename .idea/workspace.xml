@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c0ebd1d-befd-4289-aa80-c8a0d183ff3c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ReviewLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/ReviewLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/dataLoader/UserLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/config/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ReviewLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/ReviewLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nlu/DecentAndCraft/dataLoader/UserLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nlu/DecentAndCraft/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +172,7 @@
       <workItem from="1720460482474" duration="567000" />
       <workItem from="1720462516064" duration="2998000" />
       <workItem from="1720481223565" duration="5634000" />
-      <workItem from="1720508848279" duration="8362000" />
+      <workItem from="1720508848279" duration="8738000" />
     </task>
     <servers />
   </component>
