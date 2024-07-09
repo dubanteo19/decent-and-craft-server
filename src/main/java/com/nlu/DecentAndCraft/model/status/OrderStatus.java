@@ -3,7 +3,7 @@ package com.nlu.DecentAndCraft.model.status;
 import com.nlu.DecentAndCraft.model.Status;
 
 public enum OrderStatus {
-    CHO_THANH_TOAN,
+    CHO_VAN_CHUYEN,
     DANG_VAN_CHUYEN,
     HOAN_THANH,
     TRA_HANG,
