@@ -5,27 +5,26 @@ import com.nlu.DecentAndCraft.service.ReviewService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
 @Order(5)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ReviewLoader implements CommandLineRunner {
-    ReviewService reviewService;
+    private final ReviewService reviewService;
+
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+    public ReviewLoader(ReviewService reviewService) {
+        this.reviewService = reviewService;
+    }
+
     @Override
     public void run(String... args) {
-        // var r1 = new ReviewAddRequest(1L, 1L, "San pham tuyet voi", 5);
-        // var r2 = new ReviewAddRequest(2L, 1L, "San pham tam duoc", 3);
-        // var r3 = new ReviewAddRequest(3L, 1L, "Rat te", 2);
-        // var r4 = new ReviewAddRequest(4L, 1L, "Xuat sac lam", 5);
-
-        // reviewService.saveReview(r1);
-        // reviewService.saveReview(r2);
-        // reviewService.saveReview(r3);
-        // reviewService.saveReview(r4);
+        if (!includeDataLoader) {
+            return;}
         ReviewAddRequest r1 = new ReviewAddRequest(1L, 1L, "Sản phẩm này thật sự tuyệt vời, tôi yêu nó!", 5);
         ReviewAddRequest r2 = new ReviewAddRequest(2L, 2L, "Chất lượng sản phẩm rất tốt, đáng tiền.", 4);
         ReviewAddRequest r3 = new ReviewAddRequest(3L, 2L, "Sản phẩm này không tệ, nhưng cũng không đặc sắc lắm.", 3);
@@ -69,6 +68,6 @@ public class ReviewLoader implements CommandLineRunner {
         reviewService.saveReview(r19);
         reviewService.saveReview(r20);
 
- 
+
     }
 }

@@ -5,6 +5,7 @@ import com.nlu.DecentAndCraft.service.VoucherService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -13,13 +14,21 @@ import java.time.LocalDate;
 
 @Component
 @Order(7)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class VoucherLoader implements CommandLineRunner {
-    VoucherService voucherService;
+    private final VoucherService voucherService;
+
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public VoucherLoader(VoucherService voucherService) {
+        this.voucherService = voucherService;
+    }
 
     @Override
     public void run(String... args) throws Exception {
+        if (!includeDataLoader) {
+            return;
+        }
         var v1 = new VoucherAddRequest(
                 "DBT19",
                 "Giảm ngay 20.000vnd với đơn hàng trên 100.000vnd",

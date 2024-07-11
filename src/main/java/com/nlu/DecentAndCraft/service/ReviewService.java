@@ -50,7 +50,7 @@ public class ReviewService {
         var existingReview = reviewRepository
                 .findById(reviewId)
                 .orElseThrow(ReviewNotFoundException::new);
-        existingReview = reviewMapper.toReview(request);
+        reviewMapper.updateReview(request, existingReview);
         return reviewRepository.save(existingReview);
     }
 

@@ -1,0 +1,817 @@
+GET http://localhost:8080/api/v1/products/filter?minPrice=100000&maxPrice=2000000&page=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T143412.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0&page=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T143347.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0&page=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T143331.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0&page=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T143256.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T142118.500.json
+
+###
+
+GET http://localhost:8080/api/v1/users/2/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T141022.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/orders
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T141014.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/1/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T140823.500.json
+
+###
+
+GET http://localhost:8080/api/v1/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T140812.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/orders
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T134117.200.json
+
+###
+
+GET http://localhost:8080/api/v1/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T133818.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/2/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T133705.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T133703.200.json
+
+###
+
+GET http://localhost:8080/api/v1/users/2/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T133649.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T133611.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T102603.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T102509.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T101743.500.json
+
+###
+
+GET http://localhost:8080/api/v1/users/1/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T101736.200.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T100849.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T100348.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T100149.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T095923.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 1,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T095746.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 1,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T095428.500.json
+
+###
+
+POST http://localhost:8080/api/v1/users/2/order
+Content-Type: application/json
+Content-Length: 312
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "voucherId": 1,
+  "addressId": 1,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
+
+<> 2024-07-11T094137.500.json
+
+###
+
+GET http://localhost:8080/api/v1/users/1/orders
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T085125.200.json
+
+###
+
+GET http://localhost:8080/api/v1/product-detail/1/reviews
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T085029.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/product-detail/1/reviews/1
+Content-Type: application/json
+Content-Length: 94
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "reviewId": 1,
+  "userId": 1,
+  "productId": 1,
+  "rating": 5,
+  "text": "Not very good"
+}
+
+<> 2024-07-11T085011.200.json
+
+###
+
+GET http://localhost:8080/api/v1/product-detail/1/reviews/average-rating
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-11T084654.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T203313.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T202642.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T202640.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T202620.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T201848.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T201629.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T201139.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T201108.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T200634.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T200632.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T200629.500.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195856.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195615.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195454.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195350.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195244.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T195138.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T194443.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T194416.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-10T193944.200.json
+
+###
+

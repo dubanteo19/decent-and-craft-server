@@ -5,12 +5,10 @@ import com.nlu.DecentAndCraft.dto.request.UserRegisterRequest;
 import com.nlu.DecentAndCraft.mapper.AddressMapper;
 import com.nlu.DecentAndCraft.repository.UserRepository;
 import com.nlu.DecentAndCraft.service.UserService;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.experimental.FieldDefaults;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -18,16 +16,24 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Order(4)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class UserLoader implements CommandLineRunner {
-    UserService userService;
-    AddressMapper addressMapper = AddressMapper.INSTANCE;
-    UserRepository repository;
+    private final UserService userService;
+    private final AddressMapper addressMapper = AddressMapper.INSTANCE;
     private final UserRepository userRepository;
+
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public UserLoader(UserService userService, UserRepository userRepository) {
+        this.userService = userService;
+        this.userRepository = userRepository;
+    }
+
 
     @Override
     public void run(String... args) throws Exception {
+        if (!includeDataLoader) {
+            return;}
         var u1 = new UserRegisterRequest("minh.nguyen@gmail.com", "123456", "Nguyễn Văn Minh");
         var u2 = new UserRegisterRequest("ngan.le@gmail.com", "123456", "Lê Thị Ngân");
         var u3 = new UserRegisterRequest("quynh.tran@gmail.com", "123456", "Trần Thị Quỳnh");
@@ -48,7 +54,7 @@ public class UserLoader implements CommandLineRunner {
         var u18 = new UserRegisterRequest("tien.le@gmail.com", "123456", "Lê Văn Tiến");
         var u19 = new UserRegisterRequest("hoa.vo@gmail.com", "123456", "Võ Thị Hoa");
         var u20 = new UserRegisterRequest("long.nguyen@gmail.com", "123456", "Nguyễn Văn Long");
-        List<UserRegisterRequest> users = List.of( u2, u3, u4, u5, u6, u7, u8, u9, u10,
+        List<UserRegisterRequest> users = List.of(u2, u3, u4, u5, u6, u7, u8, u9, u10,
                 u11, u12, u13, u14, u15, u16, u17, u18, u19, u20);
         users.forEach(userService::register);
         var addressDto1 = new AddressAddRequest(false, "BTVT", "Dat Dat", "Phuoc Hai",

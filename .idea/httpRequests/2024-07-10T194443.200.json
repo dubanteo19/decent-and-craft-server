@@ -1,0 +1,76 @@
+{
+  "content": [
+    {
+      "createdDate": "2024-07-10T16:25:01.571601",
+      "modifiedDate": "2024-07-10T16:25:01.571601",
+      "id": 37,
+      "name": "Thiệp quà tặng in hình đáng yêu mẫu trái tim.",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lik7yhsj7tg2c7",
+      "price": 1000.0,
+      "origin": 2000.0,
+      "status": "CON_HANG",
+      "unitInStock": 100
+    },
+    {
+      "createdDate": "2024-07-10T16:25:01.70926",
+      "modifiedDate": "2024-07-10T16:25:01.70926",
+      "id": 41,
+      "name": "Thiệp Giấy Gấp Ba Mini Greeting Card Caro Hoạt Hình Hình Nổi Pop Up 3D TTH",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfe8sw5grq0l4b",
+      "price": 3500.0,
+      "origin": 3700.0,
+      "status": "CON_HANG",
+      "unitInStock": 100
+    },
+    {
+      "createdDate": "2024-07-10T16:25:01.783832",
+      "modifiedDate": "2024-07-10T16:25:01.783832",
+      "id": 43,
+      "name": "PVN62594 Thiệp Giấy Thủ Công Phối Hoa Khô Làm Quà Tặng Ngày Của Mẹ -Sinh Nhật - Ngày Lễ Tình Nhân - Quốc tế phụ nữ",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134201-7r98o-lq1y3wlbrxo781",
+      "price": 3500.0,
+      "origin": 4200.0,
+      "status": "CON_HANG",
+      "unitInStock": 100
+    },
+    {
+      "createdDate": "2024-07-10T16:25:01.670435",
+      "modifiedDate": "2024-07-10T16:25:01.670435",
+      "id": 40,
+      "name": "Thiệp quà tặng Tình yêu \"I love you\" \"To my dear\"",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lwe7ae12owrf59",
+      "price": 4000.0,
+      "origin": 5000.0,
+      "status": "CON_HANG",
+      "unitInStock": 100
+    },
+    {
+      "createdDate": "2024-07-10T16:25:01.637897",
+      "modifiedDate": "2024-07-10T16:25:01.637897",
+      "id": 39,
+      "name": "Thiệp Chúc Mừng Vintage Cao Cấp LALUNA.CENT - Thư Cảm Ơn Quà Tặng Bạn Bè Người Thân",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-loid9gqa3ylv45",
+      "price": 5000.0,
+      "origin": 6000.0,
+      "status": "CON_HANG",
+      "unitInStock": 100
+    },
+    {
+      "createdDate": "2024-07-10T16:25:01.502441",
+      "modifiedDate": "2024-07-10T16:25:01.502441",
+      "id": 35,
+      "name": "Thiệp hoa khô, thiệp handmade vintage đen sang trọng dùng decor, quà valentine, 8/3, 20/10, giáng sinh, sinh nhật - T6",
+      "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lsh3mjzot7rtee",
+      "price": 6000.0,
+      "origin": 8000.0,
+      "status": "CON_HANG",
+      "unitInStock": 92
+    }
+  ],
+  "page": {
+    "size": 10,
+    "number": 0,
+    "totalElements": 128,
+    "totalPages": 13
+  }
+}

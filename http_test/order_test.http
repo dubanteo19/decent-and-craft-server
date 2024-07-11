@@ -1,4 +1,31 @@
-###Find order list of user
-GET http://localhost:8080/api/v1/users/1/orders
+### Find all orders
 
-###Create
+GET http://localhost:8080/api/v1/orders
+
+###Find order list of user
+GET http://localhost:8080/api/v1/users/2/orders
+
+###Create a order for a user with userId
+POST  http://localhost:8080/api/v1/users/2/orders
+Content-Type: application/json
+
+{
+  "voucherId": 1,
+  "addressId": 2,
+  "notice": "Giao ngay bao ve",
+  "shipment": "COD",
+  "shippingFee": 20000,
+  "userId": 2,
+  "orderDetails": [
+    {
+      "productId": 1,
+      "price": 500000,
+      "quantity": 10
+    },
+    {
+      "productId": 2,
+      "price": 100000,
+      "quantity": 20
+    }
+  ]
+}
