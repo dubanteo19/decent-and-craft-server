@@ -2,9 +2,11 @@ package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.dto.request.ProductAddRequest;
 import com.nlu.DecentAndCraft.dto.response.ReviewResponse;
+import com.nlu.DecentAndCraft.exception.ProductNotFoundException;
 import com.nlu.DecentAndCraft.mapper.ReviewMapper;
 import com.nlu.DecentAndCraft.model.*;
 import com.nlu.DecentAndCraft.model.status.ProductStatus;
+import com.nlu.DecentAndCraft.repository.OrderDetailRepository;
 import com.nlu.DecentAndCraft.repository.ProductDetailRepository;
 import com.nlu.DecentAndCraft.repository.ProductRepository;
 import lombok.AccessLevel;
@@ -22,6 +24,7 @@ public class ProductDetailService {
     ProductDetailRepository productDetailRepository;
     ProductRepository productRepository;
     CategoryService categoryService;
+    OrderDetailRepository orderDetailRepository;
     ReviewMapper reviewMapper = ReviewMapper.INSTANCE;
 
     public List<ProductDetail> getAllProductDetails() {
@@ -73,11 +76,25 @@ public class ProductDetailService {
         return productDetailRepository.save(saveProductDetail);
     }
 
+    public Double getAverageRating(Long productId) {
+        var productDetail = productDetailRepository
+                .findByProductId(productId)
+                .orElseThrow(ProductNotFoundException::new);
+        var totalRating = productDetail.getReviewList().stream()
+                .map(Review::getRating)
+                .reduce(0, Integer::sum);
+        return (double) totalRating / productDetail.getReviewList().size();
+    }
+
     public List<ReviewResponse> getReviewList(Long productId) {
         var product = productDetailRepository.findByProductId(productId).orElseThrow();
         return product
                 .getReviewList()
                 .stream()
                 .map(reviewMapper::toReviewResponse).toList();
+    }
+
+    public Integer getProductDetailSold(Long productId) {
+        return orderDetailRepository.findTotalQuantitySoldByProductId(Math.toIntExact(productId));
     }
 }

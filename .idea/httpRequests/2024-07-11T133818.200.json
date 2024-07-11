@@ -1,0 +1,147 @@
+[
+  {
+    "createdDate": "2024-07-11T13:35:57.871377",
+    "modifiedDate": "2024-07-11T13:35:57.871377",
+    "id": 1,
+    "status": "CHO_VAN_CHUYEN",
+    "voucher": {
+      "createdDate": "2024-07-11T13:35:57.84239",
+      "modifiedDate": "2024-07-11T13:35:57.84239",
+      "id": 1,
+      "voucherCode": "DBT19",
+      "description": "Giảm ngay 20.000vnd với đơn hàng trên 100.000vnd",
+      "quantity": 100,
+      "amount": 20000.0,
+      "conditions": 100000.0,
+      "expirationDate": "2024-10-01"
+    },
+    "orderDetails": [
+      {
+        "id": 1,
+        "quantity": 2,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.335306",
+          "modifiedDate": "2024-07-11T13:35:46.335306",
+          "id": 1,
+          "name": "Nến thơm Tealight hoa khô DATELIGHTS CANDLE - DATENEYLAND STYLE HÀN QUỐC KÈM HỘP",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw2e7o8awsez71",
+          "price": 108000.0,
+          "origin": 120000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 108000.0
+      },
+      {
+        "id": 2,
+        "quantity": 5,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.392822",
+          "modifiedDate": "2024-07-11T13:35:46.392822",
+          "id": 2,
+          "name": "Set Quà Tặng Nến Thơm Quà Sinh Nhật Quà Tặng Doanh Nghiệp Quà Tặng Người Yêu",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvakays3lv1g1f",
+          "price": 629000.0,
+          "origin": 720000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 629000.0
+      }
+    ],
+    "shipment": "COD",
+    "notice": "Giao nhanh nhanh nha",
+    "shippingFee": 200000.0,
+    "totalPrice": 0.0
+  },
+  {
+    "createdDate": "2024-07-11T13:36:11.370579",
+    "modifiedDate": "2024-07-11T13:36:11.370579",
+    "id": 2,
+    "status": null,
+    "voucher": null,
+    "orderDetails": [
+      {
+        "id": 3,
+        "quantity": 10,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.335306",
+          "modifiedDate": "2024-07-11T13:35:46.335306",
+          "id": 1,
+          "name": "Nến thơm Tealight hoa khô DATELIGHTS CANDLE - DATENEYLAND STYLE HÀN QUỐC KÈM HỘP",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw2e7o8awsez71",
+          "price": 108000.0,
+          "origin": 120000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 500000.0
+      },
+      {
+        "id": 4,
+        "quantity": 20,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.392822",
+          "modifiedDate": "2024-07-11T13:35:46.392822",
+          "id": 2,
+          "name": "Set Quà Tặng Nến Thơm Quà Sinh Nhật Quà Tặng Doanh Nghiệp Quà Tặng Người Yêu",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvakays3lv1g1f",
+          "price": 629000.0,
+          "origin": 720000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 100000.0
+      }
+    ],
+    "shipment": "COD",
+    "notice": "Giao ngay bao ve",
+    "shippingFee": 20000.0,
+    "totalPrice": 0.0
+  },
+  {
+    "createdDate": "2024-07-11T13:37:03.202293",
+    "modifiedDate": "2024-07-11T13:37:03.202293",
+    "id": 3,
+    "status": null,
+    "voucher": null,
+    "orderDetails": [
+      {
+        "id": 5,
+        "quantity": 10,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.335306",
+          "modifiedDate": "2024-07-11T13:35:46.335306",
+          "id": 1,
+          "name": "Nến thơm Tealight hoa khô DATELIGHTS CANDLE - DATENEYLAND STYLE HÀN QUỐC KÈM HỘP",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lw2e7o8awsez71",
+          "price": 108000.0,
+          "origin": 120000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 500000.0
+      },
+      {
+        "id": 6,
+        "quantity": 20,
+        "product": {
+          "createdDate": "2024-07-11T13:35:46.392822",
+          "modifiedDate": "2024-07-11T13:35:46.392822",
+          "id": 2,
+          "name": "Set Quà Tặng Nến Thơm Quà Sinh Nhật Quà Tặng Doanh Nghiệp Quà Tặng Người Yêu",
+          "thumbnail": "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lvakays3lv1g1f",
+          "price": 629000.0,
+          "origin": 720000.0,
+          "status": "CON_HANG",
+          "unitInStock": 100
+        },
+        "price": 100000.0
+      }
+    ],
+    "shipment": "COD",
+    "notice": "Giao ngay bao ve",
+    "shippingFee": 20000.0,
+    "totalPrice": 0.0
+  }
+]

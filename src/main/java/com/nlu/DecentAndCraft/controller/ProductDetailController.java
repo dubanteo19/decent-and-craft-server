@@ -29,6 +29,16 @@ public class ProductDetailController {
         return ResponseEntity.ok(productDetailService.getProductDetailById(productId));
     }
 
+    @GetMapping("/{productId}/sold")
+    public ResponseEntity<Integer> getProductDetailSold(@PathVariable Long productId) {
+        return ResponseEntity.ok(productDetailService.getProductDetailSold(productId));
+    }
+
+    @GetMapping("/{productId}/reviews/average-rating")
+    public ResponseEntity<Double> getAverageRating(@PathVariable Long productId) {
+        return ResponseEntity.ok(productDetailService.getAverageRating(productId));
+    }
+
     @GetMapping("/{productId}/reviews")
     public ResponseEntity<List<ReviewResponse>> getReviewList(@PathVariable Long productId) {
         return ResponseEntity.ok(productDetailService.getReviewList(productId));

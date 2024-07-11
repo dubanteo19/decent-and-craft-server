@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "comments": "Not very good",
+    "rating": 5,
+    "userId": 1,
+    "userFullName": "Lê Thị Ngân",
+    "createdDate": "2024-07-10T16:25:16.888956",
+    "modifiedDate": "2024-07-11T08:50:11.689753"
+  },
+  {
+    "id": 9,
+    "comments": "Chất lượng sản phẩm không tương xứng với giá tiền.",
+    "rating": 3,
+    "userId": 9,
+    "userFullName": "Nguyễn Văn Nam",
+    "createdDate": "2024-07-10T16:25:17.153979",
+    "modifiedDate": "2024-07-10T16:25:17.153979"
+  },
+  {
+    "id": 10,
+    "comments": "Sản phẩm này cũng được, nhưng không đặc sắc lắm.",
+    "rating": 3,
+    "userId": 10,
+    "userFullName": "Phạm Thị Lan",
+    "createdDate": "2024-07-10T16:25:17.180011",
+    "modifiedDate": "2024-07-10T16:25:17.180011"
+  },
+  {
+    "id": 11,
+    "comments": "Tôi có cảm giác bình thường về sản phẩm này.",
+    "rating": 2,
+    "userId": 11,
+    "userFullName": "Võ Thanh Thanh",
+    "createdDate": "2024-07-10T16:25:17.22286",
+    "modifiedDate": "2024-07-10T16:25:17.22286"
+  }
+]

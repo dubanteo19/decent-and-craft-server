@@ -9,7 +9,6 @@ public record OrderAddRequest(
         String shipment,
         String notice,
         double shippingFee,
-        double totalPrice,
         List<OrderDetailRequest> orderDetails
 ) {
 }

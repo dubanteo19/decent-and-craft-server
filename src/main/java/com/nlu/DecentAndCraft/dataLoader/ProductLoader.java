@@ -7,20 +7,29 @@ import com.nlu.DecentAndCraft.service.ProductService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
 @Order(1)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class ProductLoader implements CommandLineRunner {
-    ProductService productService;
-    StatusRepository statusRepository;
+    private final ProductService productService;
+    private final StatusRepository statusRepository;
+
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public ProductLoader(ProductService productService, StatusRepository statusRepository) {
+        this.productService = productService;
+        this.statusRepository = statusRepository;
+    }
 
     @Override
     public void run(String... args) throws Exception {
+        if (!includeDataLoader) {
+            return;}
         // s3 la trang thai con hang
         var s3 = ProductStatus.CON_HANG;
 
@@ -385,8 +394,8 @@ public class ProductLoader implements CommandLineRunner {
                 78000, 78000, s3, 100);
         productService.save(p57);
 
-                // Product 58
-                Product p58 = new Product(null,
+        // Product 58
+        Product p58 = new Product(null,
                 "Set quà sinh nhật ý nghĩa cho cả nam & nữ - Combo quà tặng sổ gỗ, cốc tre, ống hút (Khắc hình & chữ theo yêu cầu)",
                 "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-luagjof9dc0v17",
                 329000, 349000, s3, 100);

@@ -8,9 +8,7 @@ import com.nlu.DecentAndCraft.model.ProductDetail;
 import com.nlu.DecentAndCraft.service.CategoryService;
 import com.nlu.DecentAndCraft.service.ProductDetailService;
 import com.nlu.DecentAndCraft.service.ProductService;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -19,15 +17,23 @@ import java.util.List;
 
 @Component
 @Order(2)
-@AllArgsConstructor
-@FieldDefaults(makeFinal = true, level = AccessLevel.PACKAGE)
 public class ProductDetailLoader implements CommandLineRunner {
-    ProductDetailService productDetailService;
-    ProductService productService;
-    CategoryService categoryService;
+    private final ProductDetailService productDetailService;
+    private final ProductService productService;
+    private final CategoryService categoryService;
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public ProductDetailLoader(ProductDetailService productDetailService, ProductService productService, CategoryService categoryService) {
+        this.productDetailService = productDetailService;
+        this.productService = productService;
+        this.categoryService = categoryService;
+    }
 
     @Override
     public void run(String... args) {
+        if (!includeDataLoader) {
+            return;}
         loadCategories();
         var c1 = categoryService.getCategoryById(1L);
         var c2 = categoryService.getCategoryById(2L);

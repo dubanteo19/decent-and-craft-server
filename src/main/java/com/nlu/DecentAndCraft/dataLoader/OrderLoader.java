@@ -9,6 +9,8 @@ import com.nlu.DecentAndCraft.service.VoucherService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -18,16 +20,24 @@ import java.util.List;
 
 @Component
 @Order(8)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class OrderLoader implements CommandLineRunner {
-    OrderService orderService;
-    VoucherService voucherService;
-    UserService userService;
-    ProductService productService;
+    private final OrderService orderService;
+    private final VoucherService voucherService;
+    private final UserService userService;
+    private final ProductService productService;
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public OrderLoader(OrderService orderService, VoucherService voucherService, UserService userService, ProductService productService) {
+        this.orderService = orderService;
+        this.voucherService = voucherService;
+        this.userService = userService;
+        this.productService = productService;
+    }
 
     @Override
     public void run(String... args) throws Exception {
+        if (!includeDataLoader) return;
         OrderStatus status1 = OrderStatus.CHO_VAN_CHUYEN;
         var voucher1 = voucherService.getVoucherById(1L);
         var address1 = userService.getAddressById(1L);

@@ -1,0 +1,3 @@
+{
+  "message": "JDBC exception executing SQL [/* <criteria> */ select distinct pd1_0.id,pd1_0.product_id,pd1_0.product_blog_id,pd1_0.views from product_detail pd1_0 join product p1_0 on p1_0.id=pd1_0.product_id where p1_0.price>=? order by p1_0.price limit ?,?] [Expression #1 of ORDER BY clause is not in SELECT list, references column 'decent_craft.p1_0.price' which is not in SELECT list; this is incompatible with DISTINCT] [n/a]"
+}

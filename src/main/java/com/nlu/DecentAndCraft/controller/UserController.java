@@ -4,6 +4,7 @@ import com.nlu.DecentAndCraft.dto.request.*;
 import com.nlu.DecentAndCraft.model.Address;
 import com.nlu.DecentAndCraft.model.Order;
 import com.nlu.DecentAndCraft.model.User;
+import com.nlu.DecentAndCraft.service.OrderService;
 import com.nlu.DecentAndCraft.service.UserService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -19,6 +20,7 @@ import java.util.List;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class UserController {
     UserService userService;
+    OrderService orderService;
 
     @GetMapping
     public ResponseEntity<List<User>> getUsers() {
@@ -38,6 +40,13 @@ public class UserController {
     @PutMapping("/{userId}/change-password")
     public ResponseEntity<User> changePassword(@PathVariable Long userId, @RequestBody ChangePasswordRequest request) {
         return ResponseEntity.ok(userService.changePassword(userId, request));
+    }
+
+    @PostMapping("/{userId}/orders")
+    public ResponseEntity<Order> saveOrder(@PathVariable Long userId,
+                                           @RequestBody OrderAddRequest request) {
+        if (userId != request.userId()) throw new RuntimeException("UserId not matches");
+        return ResponseEntity.ok(orderService.createOrder(request));
     }
 
     @PostMapping("/{userId}/address")

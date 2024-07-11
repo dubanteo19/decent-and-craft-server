@@ -7,6 +7,7 @@ import com.nlu.DecentAndCraft.service.BlogService;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -15,14 +16,23 @@ import java.util.List;
 
 @Component
 @Order(3)
-@AllArgsConstructor
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class BlogLoader implements CommandLineRunner {
-    BlogService blogService;
-    BlogCategoryRepository blogCategoryRepository;
+    private final BlogService blogService;
+    private final BlogCategoryRepository blogCategoryRepository;
+    @Value("${include-data-loader}")
+    boolean includeDataLoader;
+
+    public BlogLoader(BlogService blogService, BlogCategoryRepository blogCategoryRepository) {
+        this.blogService = blogService;
+        this.blogCategoryRepository = blogCategoryRepository;
+    }
 
     @Override
     public void run(String... args) throws Exception {
+        if (!includeDataLoader) {
+            return;
+        }
+
         saveBlogcategories();
         Blog blog = Blog
                 .builder()
@@ -113,7 +123,7 @@ public class BlogLoader implements CommandLineRunner {
         var blogc2 = blogCategoryRepository.findById(2L).get();
         var blogc3 = blogCategoryRepository.findById(3L).get();
         var blogc4 = blogCategoryRepository.findById(4L).get();
-        blog.setCategories(List.of(blogc1,blogc2));
+        blog.setCategories(List.of(blogc1, blogc2));
         blogService.save(blog);
     }
 

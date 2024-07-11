@@ -2,12 +2,19 @@ package com.nlu.DecentAndCraft.service;
 
 import com.nlu.DecentAndCraft.exception.ProductNotFoundException;
 import com.nlu.DecentAndCraft.model.Product;
+import com.nlu.DecentAndCraft.model.ProductDetail;
+import com.nlu.DecentAndCraft.model.Review;
 import com.nlu.DecentAndCraft.repository.ProductDetailRepository;
 import com.nlu.DecentAndCraft.repository.ProductRepository;
+import com.nlu.DecentAndCraft.specification.ProductSpecification;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,8 +48,19 @@ public class ProductService {
     }
 
     public List<Product> findByCategoryId(Long categoryId) {
-//        productDetailRepository.find
         return null;
+    }
+
+
+    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name, Pageable pageable) {
+        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name);
+        Page<ProductDetail> productDetails = productDetailRepository.findAll(spec, pageable);
+        List<Product> products = productDetails.stream()
+                .map(ProductDetail::getProduct)
+                .distinct()
+                .toList();
+        long totalRow = productDetailRepository.count(spec);
+        return new PageImpl<>(products, pageable, totalRow);
     }
 
     public Product save(Product product) {
