@@ -1,3 +1,0 @@
-{
-  "message": "Handler dispatch failed: java.lang.NoSuchMethodError: 'double com.nlu.DecentAndCraft.dto.request.OrderAddRequest.totalPrice()'"
-}

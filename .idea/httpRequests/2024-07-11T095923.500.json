@@ -1,3 +1,0 @@
-{
-  "message": "could not execute statement [Duplicate entry '1' for key 'order_detail.UKnkb731c2u3fxwuln18o6lyx6u'] [insert into order_detail (price,product_id,quantity) values (?,?,?)]; SQL [insert into order_detail (price,product_id,quantity) values (?,?,?)]; constraint [order_detail.UKnkb731c2u3fxwuln18o6lyx6u]"
-}

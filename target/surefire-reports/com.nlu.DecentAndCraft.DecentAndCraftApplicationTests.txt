@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.nlu.DecentAndCraft.DecentAndCraftApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.080 s -- in com.nlu.DecentAndCraft.DecentAndCraftApplicationTests
