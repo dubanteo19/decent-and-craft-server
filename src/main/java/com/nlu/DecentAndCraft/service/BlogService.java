@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -35,5 +36,13 @@ public class BlogService {
 
     public Blog save(Blog blog) {
         return blogRepository.save(blog);
+    }
+
+    public List<Blog> getLimitBlogs(int limit) {
+        return blogRepository.findAll()
+                .stream()
+                .sorted(Comparator.comparing(Blog::getCreatedDate))
+                .limit(limit)
+                .toList();
     }
 }

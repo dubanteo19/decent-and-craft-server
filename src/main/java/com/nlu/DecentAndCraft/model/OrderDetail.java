@@ -21,4 +21,8 @@ public class OrderDetail {
     @JoinColumn(name = "product_id")
     Product product;
     double price;
+
+    public void sell() {
+        product.sell(quantity);
+    }
 }

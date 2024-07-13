@@ -1,3 +1,93 @@
+GET http://localhost:8080/api/v1/blogs/filter?limit=8
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T052123.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051941.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/products/1/view
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051933.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?categoryId=1&categoryId=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051916.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minRating=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051832.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minRating=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051758.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minRating=1&page=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051745.200.json
+
+###
+
+GET http://localhost:8080/api/v1/products/filter?minPrice=100000&maxPrice=2000000&minRating=1&page=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T051724.200.json
+
+###
+
+PUT http://localhost:8080/api/v1/products/1/view
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-07-13T043158.200.json
+
+###
+
 GET http://localhost:8080/api/v1/products/filter?minPrice=100000&maxPrice=2000000&page=2
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -722,96 +812,6 @@ Accept: */*
 content-length: 0
 
 <> 2024-07-10T200629.500.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195856.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195615.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195454.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195350.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195244.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T195138.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T194443.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T194416.200.json
-
-###
-
-GET http://localhost:8080/api/v1/products/filter?minPrice=0.0
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.1.4
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2024-07-10T193944.200.json
 
 ###
 

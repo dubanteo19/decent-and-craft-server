@@ -21,7 +21,6 @@ public class Order extends AbstractModel {
     Long id;
     @ManyToOne
     @JoinColumn(name = "address_id")
-    @JsonIgnore
     Address address;
     @Enumerated(EnumType.STRING)
     OrderStatus status;
@@ -39,4 +38,12 @@ public class Order extends AbstractModel {
     String notice;
     double shippingFee;
     double totalPrice;
+
+    public Double totalOrderDetailsPrice() {
+        return  orderDetails
+                .stream()
+                .map(orderDetail -> orderDetail.getPrice() * orderDetail.getQuantity())
+                .reduce(0.0, Double::sum);
+
+    }
 }

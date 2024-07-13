@@ -23,6 +23,11 @@ public class BlogController {
         return ResponseEntity.ok(blogService.findAll());
     }
 
+    @GetMapping("/filter")
+    public ResponseEntity<List<Blog>> getLimitBlogs(@RequestParam(required = false) int limit) {
+        return ResponseEntity.ok(blogService.getLimitBlogs(limit));
+    }
+
     @GetMapping("/search")
     public ResponseEntity<List<Blog>> getAllBlogsByBlogCategoryId(@RequestParam Long categoryId) {
         return ResponseEntity.ok(blogService.findAllBlogByBlogCategoryId(categoryId));
