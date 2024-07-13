@@ -7,13 +7,17 @@ import com.nlu.DecentAndCraft.exception.UserNotFoundException;
 import com.nlu.DecentAndCraft.mapper.OrderMapper;
 import com.nlu.DecentAndCraft.model.Order;
 import com.nlu.DecentAndCraft.model.OrderDetail;
+import com.nlu.DecentAndCraft.model.Product;
+import com.nlu.DecentAndCraft.model.Voucher;
 import com.nlu.DecentAndCraft.model.status.OrderStatus;
 import com.nlu.DecentAndCraft.repository.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -39,10 +43,11 @@ public class OrderService {
         return orderDetail;
     }
 
-    public Order createOrder(Order order) {
-        return orderRepository.save(order);
+    public void createOrder(Order order) {
+        orderRepository.save(order);
     }
 
+    @Transactional
     public Order createOrder(OrderAddRequest request) {
         var order = orderMapper.toOrder(request);
         var voucher = voucherRepository.findById((long) request.voucherId()).orElse(null);
@@ -52,20 +57,52 @@ public class OrderService {
                 .stream()
                 .map(this::toOrderDetail)
                 .toList();
-        order.setVoucher(voucher);
+        validateVoucher(order, voucher);
         order.setAddress(address);
         order.setUser(user);
         order.setOrderDetails(orderDetails);
         order.setStatus(OrderStatus.CHO_VAN_CHUYEN);
         order.setTotalPrice(calculateTotalPrice(order));
-        return orderRepository.save(order);
+        var savedOrder = orderRepository.save(order);
+        updateVoucher(savedOrder);
+        sell(savedOrder);
+        return savedOrder;
+
     }
 
-    private double calculateTotalPrice(Order order) {
-        var totalOrderDetailsPrice = order.getOrderDetails()
+    @Transactional
+    public void validateVoucher(Order order, Voucher voucher) {
+        if (voucher == null) return;
+        if (voucher.getQuantity() <= 0)
+            throw new IllegalArgumentException("Voucher quantity must be greater than zero");
+        if (voucher.getConditions() > order.totalOrderDetailsPrice())
+            throw new IllegalArgumentException("Voucher conditions must not be greater than the total order details price.");
+        if (voucher.getExpirationDate().isBefore(LocalDate.now()))
+            throw new IllegalArgumentException("Voucher is expired");
+        order.setVoucher(voucher);
+    }
+
+    @Transactional
+    public void updateVoucher(Order savedOrder) {
+        var voucher = savedOrder.getVoucher();
+        if (savedOrder.getVoucher() == null) return;
+        var newQuantity = savedOrder.getVoucher().getQuantity() + 1;
+        if (newQuantity < 0) throw new IllegalArgumentException("Voucher quantity can not be negative");
+        voucher.setQuantity(newQuantity);
+        voucherRepository.save(voucher);
+    }
+
+    public void sell(Order savedOrder) {
+        List<Product> products = savedOrder.getOrderDetails()
                 .stream()
-                .map(orderDetail -> orderDetail.getPrice() * orderDetail.getQuantity())
-                .reduce(0.0, Double::sum);
+                .peek(OrderDetail::sell)
+                .map(OrderDetail::getProduct)
+                .toList();
+        productRepository.saveAll(products);
+    }
+
+    public double calculateTotalPrice(Order order) {
+        var totalOrderDetailsPrice = order.totalOrderDetailsPrice();
         double voucherPrice = 0;
         if (order.getVoucher() != null) {
             voucherPrice = order.getVoucher().getAmount();

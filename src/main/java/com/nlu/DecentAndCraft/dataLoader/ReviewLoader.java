@@ -45,7 +45,6 @@ public class ReviewLoader implements CommandLineRunner {
         ReviewAddRequest r18 = new ReviewAddRequest(18L, 7L, "Chất lượng sản phẩm tương đối tốt, phù hợp với giá tiền.", 4);
         ReviewAddRequest r19 = new ReviewAddRequest(19L, 7L, "Sản phẩm này rất bình thường, không có gì đặc sắc.", 2);
         ReviewAddRequest r20 = new ReviewAddRequest(20L, 7L, "Sản phẩm này cũng ổn, nhưng có thể cải thiện thêm nữa.", 3);
-
         // Add các đánh giá vào service
         reviewService.saveReview(r1);
         reviewService.saveReview(r2);

@@ -52,8 +52,8 @@ public class ProductService {
     }
 
 
-    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name, Pageable pageable) {
-        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name);
+    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name,Integer minRating, Pageable pageable) {
+        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name,minRating);
         Page<ProductDetail> productDetails = productDetailRepository.findAll(spec, pageable);
         List<Product> products = productDetails.stream()
                 .map(ProductDetail::getProduct)
@@ -77,5 +77,12 @@ public class ProductService {
                 .orElseThrow(ProductNotFoundException::new);
         existingProduct.setName(product.getName());
         return productRepository.save(existingProduct);
+    }
+
+    public boolean viewProduct(Long productId) {
+        var product = findById(productId);
+        product.setViews(product.getViews()+1);
+        productRepository.save(product);
+        return true;
     }
 }

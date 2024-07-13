@@ -33,6 +33,5 @@ public class ProductDetail {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "product_blog_id")
     private ProductBlog productBlog;
-    private int views;
 
 }
