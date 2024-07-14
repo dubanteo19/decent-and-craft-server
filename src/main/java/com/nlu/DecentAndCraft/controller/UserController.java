@@ -72,8 +72,8 @@ public class UserController {
     }
 
     @PostMapping("/forgot-password")
-    public ResponseEntity<User> forgotPassword(@RequestBody String email) {
-        return ResponseEntity.ok(userService.forgotPassword(email));
+    public ResponseEntity<User> forgotPassword(@RequestBody ForgotPasswordRequest request) {
+        return ResponseEntity.ok(userService.forgotPassword(request));
     }
 
     @PostMapping("/register")

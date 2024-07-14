@@ -11,12 +11,14 @@ import com.nlu.DecentAndCraft.model.Product;
 import com.nlu.DecentAndCraft.model.Voucher;
 import com.nlu.DecentAndCraft.model.status.OrderStatus;
 import com.nlu.DecentAndCraft.repository.*;
+import jakarta.mail.MessagingException;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.UnsupportedEncodingException;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -30,6 +32,7 @@ public class OrderService {
     VoucherRepository voucherRepository;
     AddressRepository addressRepository;
     UserRepository userRepository;
+    EmailService emailService;
 
     public OrderDetail toOrderDetail(OrderDetailRequest request) {
         var product = productRepository
@@ -99,6 +102,11 @@ public class OrderService {
                 .map(OrderDetail::getProduct)
                 .toList();
         productRepository.saveAll(products);
+        try {
+            emailService.sendOrderDetailsEmail(savedOrder.getUser().getEmail(), savedOrder);
+        } catch (MessagingException | UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public double calculateTotalPrice(Order order) {

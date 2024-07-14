@@ -22,6 +22,10 @@ public class OrderDetail {
     Product product;
     double price;
 
+    public double getTotalPrice() {
+        return quantity * price;
+    }
+
     public void sell() {
         product.sell(quantity);
     }

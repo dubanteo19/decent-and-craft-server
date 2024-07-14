@@ -1,4 +1,5 @@
 package com.nlu.DecentAndCraft.controller;
+
 import com.nlu.DecentAndCraft.model.Product;
 import com.nlu.DecentAndCraft.service.ProductService;
 import lombok.AccessLevel;
@@ -9,7 +10,9 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/products")
 @AllArgsConstructor
@@ -37,11 +40,11 @@ public class ProductController {
             @RequestParam(required = false) Double minPrice,
             @RequestParam(required = false) Double maxPrice,
             @RequestParam(required = false) Integer minRating,
-            @RequestParam(required = false) Long categoryId,
+            @RequestParam(required = false) List<Long> categoryIds,
             @RequestParam(required = false) String name,
             @PageableDefault Pageable pageable
     ) {
-        var products = productService.getProductsByFilters(minPrice, maxPrice, categoryId, name,minRating, pageable);
+        var products = productService.getProductsByFilters(minPrice, maxPrice, categoryIds, name, minRating, pageable);
         return ResponseEntity.ok(products);
     }
 
