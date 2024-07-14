@@ -30,7 +30,7 @@ POST localhost:8080/api/v1/users/register
 Content-Type: application/json
 
 {
-  "email": "minh2@gmail.com",
+  "email": "dubanteo2003@gmail.com",
   "password": "12345623",
   "fullName": "Du Thi Teo"
 }
@@ -41,4 +41,12 @@ Content-Type: application/json
 {
   "email": "minh@gmail.com",
   "password": "123456"
+}
+
+###Forgot password
+POST http://localhost:8080/api/v1/users/forgot-password
+Content-Type: application/json
+
+{
+  "email": "dubanteo2003@gmail.com"
 }

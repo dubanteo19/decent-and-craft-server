@@ -11,15 +11,16 @@ import com.nlu.DecentAndCraft.model.User;
 import com.nlu.DecentAndCraft.model.status.UserStatus;
 import com.nlu.DecentAndCraft.repository.AddressRepository;
 import com.nlu.DecentAndCraft.repository.UserRepository;
+import jakarta.mail.MessagingException;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Random;
-import java.util.UUID;
 
 @Service
 @AllArgsConstructor
@@ -30,6 +31,7 @@ public class UserService {
     AddressMapper addressMapper = AddressMapper.INSTANCE;
     AddressRepository addressRepository;
     BCryptPasswordEncoder encoder;
+    EmailService emailService;
 
     public User register(UserRegisterRequest user) {
         if (userRepository.existsByEmail(user.email()))
@@ -128,11 +130,17 @@ public class UserService {
         return register(newUser);
     }
 
-    public User forgotPassword(String email) {
-        var existingUser = findByEmail(email);
+    public User forgotPassword(ForgotPasswordRequest request) {
+        var existingUser = findByEmail(request.email());
+        System.out.println(request.email());
         Random r = new Random();
-        var newPassword = 100000 + r.nextInt(900000);
-        existingUser.setPassword(encoder.encode(String.valueOf(newPassword)));
+        var newPassword = String.valueOf((100000 + r.nextInt(900000)));
+        existingUser.setPassword(encoder.encode(newPassword));
+        try {
+            emailService.sendPasswordResetEmail(request.email(), newPassword);
+        } catch (MessagingException | UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
         return userRepository.save(existingUser);
     }
 }
