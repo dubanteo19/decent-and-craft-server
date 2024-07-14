@@ -34,7 +34,7 @@ public class ProductService {
         return productRepository
                 .findAll(Sort.by(Sort.Direction.ASC, "views"))
                 .stream()
-                .limit(8).toList();
+                .limit(10).toList();
     }
 
     public Product findById(Long id) {
@@ -52,8 +52,8 @@ public class ProductService {
     }
 
 
-    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name,Integer minRating, Pageable pageable) {
-        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name,minRating);
+    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name, Integer minRating, Pageable pageable) {
+        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name, minRating);
         Page<ProductDetail> productDetails = productDetailRepository.findAll(spec, pageable);
         List<Product> products = productDetails.stream()
                 .map(ProductDetail::getProduct)
@@ -81,7 +81,7 @@ public class ProductService {
 
     public boolean viewProduct(Long productId) {
         var product = findById(productId);
-        product.setViews(product.getViews()+1);
+        product.setViews(product.getViews() + 1);
         productRepository.save(product);
         return true;
     }
