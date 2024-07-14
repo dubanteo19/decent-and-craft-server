@@ -71,15 +71,23 @@ public class UserController {
         return ResponseEntity.ok(userService.getOrderList(userId));
     }
 
+    @PostMapping("/forgot-password")
+    public ResponseEntity<User> forgotPassword(@RequestBody String email) {
+        return ResponseEntity.ok(userService.forgotPassword(email));
+    }
+
     @PostMapping("/register")
     public ResponseEntity<User> register(@RequestBody UserRegisterRequest userRegisterRequest) {
         return ResponseEntity.ok(userService.register(userRegisterRequest));
+    }
 
+    @PostMapping("/login-google")
+    public ResponseEntity<User> loginGoogle(@RequestBody UserRegisterRequest userRegisterRequest) {
+        return ResponseEntity.ok(userService.loginGoogle(userRegisterRequest));
     }
 
     @PostMapping("/login")
     public ResponseEntity<User> login(@RequestBody UserLoginRequest userLoginRequest) {
         return ResponseEntity.ok(userService.login(userLoginRequest));
-
     }
 }

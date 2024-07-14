@@ -39,7 +39,7 @@ public class Product extends AbstractModel {
     int unitInStock;
 
     public void sell(int quantity) {
-        if (quantity < unitInStock) throw new IllegalArgumentException("Not enough units in stock");
+        if (quantity > unitInStock) throw new IllegalArgumentException("Not enough units in stock");
         unitInStock -= quantity;
         soldQuantity += quantity;
     }

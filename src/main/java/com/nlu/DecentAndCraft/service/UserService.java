@@ -18,6 +18,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 @Service
 @AllArgsConstructor
@@ -115,6 +117,23 @@ public class UserService {
     public List<Order> getOrderList(Long userId) {
         var user = userRepository.findById(userId).orElseThrow(UserNotFoundException::new);
         return user.getOrderList();
+    }
+
+    public User loginGoogle(UserRegisterRequest request) {
+        String email = request.email();
+        var user = userRepository.findUserByEmail(email).orElse(null);
+        if (user != null)
+            return user;
+        var newUser = new UserRegisterRequest(request.email(), request.email() + request.fullName(), request.fullName());
+        return register(newUser);
+    }
+
+    public User forgotPassword(String email) {
+        var existingUser = findByEmail(email);
+        Random r = new Random();
+        var newPassword = 100000 + r.nextInt(900000);
+        existingUser.setPassword(encoder.encode(String.valueOf(newPassword)));
+        return userRepository.save(existingUser);
     }
 }
 
