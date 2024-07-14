@@ -7,6 +7,7 @@
         body {
             font-family: Arial, sans-serif;
         }
+
         .container {
             padding: 20px;
             border: 1px solid #ddd;
@@ -14,15 +15,19 @@
             max-width: 600px;
             margin: auto;
         }
+
         .header {
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #4db6ac;
+            color: white;
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
+
         .content {
             padding: 20px;
         }
+
         .footer {
             text-align: center;
             font-size: 12px;
@@ -31,14 +36,17 @@
             border-top: 1px solid #ddd;
             background-color: #f4f4f4;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
+
         table, th, td {
             border: 1px solid #ddd;
         }
+
         th, td {
             padding: 8px;
             text-align: left;
@@ -46,56 +54,71 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Order Confirmation</h1>
-        </div>
-        <div class="content">
-            <p>Hello,</p>
-            <p>Thank you for your order. Here are the details of your order:</p>
-
-            <p><strong>Order ID:</strong> <span th:text="${order.id}"></span></p>
-            <p><strong>Status:</strong> <span th:text="${order.status}"></span></p>
-            <p><strong>Shipment:</strong> <span th:text="${order.shipment}"></span></p>
-            <p><strong>Notice:</strong> <span th:text="${order.notice}"></span></p>
-            <p><strong>Shipping Fee:</strong> <span th:text="${order.shippingFee}"></span></p>
-            <p><strong>Total Price:</strong> <span th:text="${order.totalPrice}"></span></p>
-
-            <h2>Order Details:</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Product</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr th:each="orderDetail : ${order.orderDetails}">
-                        <td th:text="${orderDetail.product.name}"></td>
-                        <td th:text="${orderDetail.quantity}"></td>
-                        <td th:text="${orderDetail.product.price}"></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Shipping Address:</h2>
-            <p>
-                <strong>Address:</strong> <span th:text="${order.address.street}"></span><br>
-                <strong>City:</strong> <span th:text="${order.address.city}"></span><br>
-                <strong>State:</strong> <span th:text="${order.address.state}"></span><br>
-                <strong>Zip Code:</strong> <span th:text="${order.address.zipCode}"></span><br>
-                <strong>Country:</strong> <span th:text="${order.address.country}"></span>
-            </p>
-
-            <p>If you have any questions, please contact our support team.</p>
-            <p>Thank you for shopping with us!</p>
-            <p>Best regards,</p>
-            <p>The [Your Company] Team</p>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 [Your Company]. All rights reserved.</p>
-        </div>
+<div class="container">
+    <div class="header">
+        <h1>Decent&Craft</h1>
     </div>
+    <div class="content">
+        <p>Xin chào <span th:text="${order.user.fullName}"></span> ,</p>
+        <p>Đơn hàng của bạn đang được chúng tôi vận chuyển. Vui lòng kiểm tra đơn hàng và chờ đợi nhận hàng.
+            Mọi thắc mắc xin liên hệ tới shop để được hỗ trợ nhanh nhất.
+        </p>
+        <p><strong>Số hóa đơn:</strong> <span th:text="${order.id}"></span></p>
+        <p><strong>Hình thức thanh toán:</strong> <span th:text="${order.shipment}"></span></p>
+        <p><strong>Ghi chú:</strong> <span th:text="${order.notice}"></span></p>
+        <h2>Chi tiết hóa đơn</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Ảnh</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="orderDetail : ${order.orderDetails}">
+                <td th:text="${orderDetail.product.name}"></td>
+                <td>
+                    <img width="50" height="50" th:src="${orderDetail.product.thumbnail}">
+                </td>
+                <td th:text="${orderDetail.quantity}"></td>
+                <td th:text="${#numbers.formatDecimal(orderDetail.totalPrice, 0, 'POINT',0, 'POINT')}">
+                   <span>VND</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <p><strong>Phí vận chuyển:</strong>
+            <span th:text="${#numbers.formatDecimal(order.shippingFee, 0, 'POINT',0, 'POINT')}">
+            </span> <span>VND</span>
+        </p>
+
+        <div th:if="${order.voucher != null}">
+            <p><strong>Voucher:</strong> <span
+                    th:text="${#numbers.formatDecimal(order.voucher.amount, 0, 'POINT',0, 'POINT')}">
+            </span>
+                <span>VND</span>
+            </p>
+        </div>
+        <p><strong>Tổng cộng:</strong>
+            <span th:text="${#numbers.formatDecimal(order.totalPrice, 0, 'POINT',0, 'POINT')}">
+            </span>
+            <span>VND</span>
+        </p>
+        <h2>Thông tin người nhận </h2>
+        <p>
+            <strong>Địa chỉ:</strong> <span th:text="${order.address.getAddressString()}"></span><br>
+            <strong>Số điện thoại</strong> <span th:text="${order.address.phoneNumber}"></span><br>
+            <strong>Họ tên</strong> <span th:text="${order.address.fullName}"></span>
+        </p>
+        <p>Nếu có sai sót gì vui lòng liên hệ shop để được hỗ trợ</p>
+        <p>Trân thành cảm ơn bạn vì đã lựa chọn chúng tôi</p>
+        <p>The Decent&Craft Team</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 decent&craft. All rights reserved.</p>
+    </div>
+</div>
 </body>
 </html>

@@ -31,4 +31,8 @@ public class Address {
     @JsonIgnore
     @OneToMany(mappedBy = "address", cascade = CascadeType.ALL)
     List<Order> orders;
+
+    public String getAddressString() {
+        return description + ", " + ward + ", " + district + ", " + province + ", " + description;
+    }
 }

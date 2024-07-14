@@ -52,8 +52,8 @@ public class ProductService {
     }
 
 
-    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, Long categoryId, String name, Integer minRating, Pageable pageable) {
-        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryId, name, minRating);
+    public Page<Product> getProductsByFilters(Double minPrice, Double maxPrice, List<Long> categoryIds, String name, Integer minRating, Pageable pageable) {
+        Specification<ProductDetail> spec = new ProductSpecification(minPrice, maxPrice, categoryIds, name, minRating);
         Page<ProductDetail> productDetails = productDetailRepository.findAll(spec, pageable);
         List<Product> products = productDetails.stream()
                 .map(ProductDetail::getProduct)

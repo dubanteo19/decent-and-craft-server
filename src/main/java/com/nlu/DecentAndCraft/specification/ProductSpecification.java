@@ -18,7 +18,7 @@ import java.util.List;
 public class ProductSpecification implements Specification<ProductDetail> {
     Double minPrice;
     Double maxPrice;
-    Long categoryId;
+    List<Long> categoryIds;
     String name;
     Integer minRating;
 
@@ -36,8 +36,8 @@ public class ProductSpecification implements Specification<ProductDetail> {
         if (name != null) {
             predicates.add(cb.like(productJoin.get("name"), "%" + name + "%"));
         }
-        if (categoryId != null) {
-            predicates.add(cb.equal(categoryJoin.get("id"), categoryId));
+        if (categoryIds != null && !categoryIds.isEmpty()) {
+            predicates.add(categoryJoin.get("id").in(categoryIds));
         }
         if (minRating != null) {
             Join<ProductDetail, Review> reviewJoin = root.join("reviewList", JoinType.LEFT);
