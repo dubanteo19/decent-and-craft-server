@@ -89,7 +89,7 @@ public class OrderService {
     public void updateVoucher(Order savedOrder) {
         var voucher = savedOrder.getVoucher();
         if (savedOrder.getVoucher() == null) return;
-        var newQuantity = savedOrder.getVoucher().getQuantity() + 1;
+        var newQuantity = savedOrder.getVoucher().getQuantity() - 1;
         if (newQuantity < 0) throw new IllegalArgumentException("Voucher quantity can not be negative");
         voucher.setQuantity(newQuantity);
         voucherRepository.save(voucher);
