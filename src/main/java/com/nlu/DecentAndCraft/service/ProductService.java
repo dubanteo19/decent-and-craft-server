@@ -32,7 +32,7 @@ public class ProductService {
 
     public List<Product> findAllHotProducts() {
         return productRepository
-                .findAll(Sort.by(Sort.Direction.ASC, "views"))
+                .findAll(Sort.by(Sort.Direction.DESC, "views"))
                 .stream()
                 .limit(10).toList();
     }
